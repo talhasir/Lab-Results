@@ -1,0 +1,30 @@
+@media (max-width: 1400px) {
+    input, span, label, textarea, input::placeholder {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    input, input::placeholder span, label, textarea {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    input, input::placeholder span, label, textarea {
+        font-size: 11px;
+    }
+}
+
+span, input, span, textarea, label, header div{
+    border: 1px solid gray;
+}
+div{
+    width: 100%;
+}
+.table input{
+    background-color: #ffffcc;
+}
+.table td{
+    padding: 0;
+}
