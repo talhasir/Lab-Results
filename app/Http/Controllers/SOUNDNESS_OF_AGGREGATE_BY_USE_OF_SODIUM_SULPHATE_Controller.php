@@ -9,7 +9,7 @@ class SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE_Controller extends Contro
 {
     public function getPage()
     {
-        return view('51-SOUNDNESS OF AGGREGATE BY USE OF SODIUM SULPHATE/51_SOUNDNESS_OF_AGGREGATE_BY_USE _OF_SODIUM_SULPHATE');
+        return view('51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE/51_SOUNDNESS_OF_AGGREGATE_BY_USE _OF_SODIUM_SULPHATE');
     }
 
     public function postPage(Request $request)

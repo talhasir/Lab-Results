@@ -9,7 +9,7 @@ class CLAY_LUMPS_IN_AGGREGATE extends Controller
 {
     public function getPage()
     {
-        return view('55-CLAY LUMPS IN AGGREGATE/55-CLAY LUMPS IN AGGREGATE');
+        return view('55_CLAY_LUMPS_IN_AGGREGATE/55-CLAY LUMPS IN AGGREGATE');
     }
 
     public function postPage(Request $request)
@@ -84,7 +84,7 @@ class CLAY_LUMPS_IN_AGGREGATE extends Controller
         $M40 = $M37 < $M38 ? 'FAIL' : 'PASS';
         $finalResults = compact('G40', 'I40', 'K40', 'M40', );
 
-        return view('FIELD DENSITY/view_42_FIELD_DENSITY_TEST')->with(
+        return view('55_CLAY_LUMPS_IN_AGGREGATE/view_42_FIELD_DENSITY_TEST')->with(
             compact(
                 'data',
                 'ResultsForUsedSand',

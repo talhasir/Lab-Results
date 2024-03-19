@@ -9,7 +9,7 @@ class UNIT_WEIGHT_OF_AGGREGATE extends Controller
 {
     public function getPage()
     {
-        return view('54-UNIT WEIGHT OF AGGREGATE/54_UNIT_WEIGHT_OF_AGGREGATE');
+        return view('54_UNIT_WEIGHT_OF_AGGREGATE/54_UNIT_WEIGHT_OF_AGGREGATE');
     }
 
     public function postPage(Request $request)
