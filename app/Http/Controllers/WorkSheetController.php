@@ -9,7 +9,7 @@ class WorkSheetController extends Controller
 {
     public function getPage()
     {
-        return view('WORK SHEET/89_WORKSHEET_FOR_BITUMINOUS');
+        return view('WORK_SHEET/89_WORKSHEET_FOR_BITUMINOUS');
     }
 
     public function postPage(Request $request)

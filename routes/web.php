@@ -1,12 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BITUMEN_EXTRACTION_GRADATION;
+use App\Http\Controllers\BLENDING_OF_AGGREGATES;
 use App\Http\Controllers\ConcreteCompressController;
 use App\Http\Controllers\BrickTestingController;
 use App\Http\Controllers\CaliforniaController;
 use App\Http\Controllers\WorkSheetController;
 use App\Http\Controllers\FieldDensityController;
 use App\Http\Controllers\CLAY_LUMPS_IN_AGGREGATE;
+use App\Http\Controllers\CONCRETE_COMPRESSIVE_STRENGTH;
+use App\Http\Controllers\CONCRETE_MIX_DESIGN;
 use App\Http\Controllers\MOISTURE_DENSITY_RELATIONS;
 use App\Http\Controllers\SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE_Controller;
 use App\Http\Controllers\UNIT_WEIGHT_OF_AGGREGATE;
@@ -94,10 +98,37 @@ Route::post('/VIEW_69_PENETRATION_OF_BITUMINOUS_MATERIAL', [PENETRATION_OF_BITUM
 
 /*
 |--------------------------------------------------------------------------
-| Routes For 69_PENETRATION_OF_BITUMINOUS_MATERIAL
+| Routes For 73_BITUMEN_EXTRACTION_GRADATION
 |--------------------------------------------------------------------------
 */
-Route::get('/106_MOISTURE_DENSITY_RELATIONS', [MOISTURE_DENSITY_RELATIONS::class, 'getPage']);;
-Route::post('/VIEW_106_MOISTURE_DENSITY_RELATIONS', [MOISTURE_DENSITY_RELATIONS::class, 'postPage'])->name('VIEW_106_MOISTURE_DENSITY_RELATIONS');
+Route::get('/73_BITUMEN_EXTRACTION_GRADATION', [BITUMEN_EXTRACTION_GRADATION::class, 'getPage']);;
+Route::post('/VIEW_73_BITUMEN_EXTRACTION_GRADATION', [BITUMEN_EXTRACTION_GRADATION::class, 'postPage'])->name('VIEW_73_BITUMEN_EXTRACTION_GRADATION');
+
+
+/*
+|--------------------------------------------------------------------------
+| Routes For 81_BLENDING_OF_AGGREGATES
+|--------------------------------------------------------------------------
+*/
+Route::get('/81_BLENDING_OF_AGGREGATES', [BLENDING_OF_AGGREGATES::class, 'getPage']);;
+Route::post('/VIEW_81_BLENDING_OF_AGGREGATES', [BLENDING_OF_AGGREGATES::class, 'postPage'])->name('VIEW_81_BLENDING_OF_AGGREGATES');
+
+
+/*
+|--------------------------------------------------------------------------
+| Routes For 81_BLENDING_OF_AGGREGATES
+|--------------------------------------------------------------------------
+*/
+Route::get('/85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO', [CONCRETE_COMPRESSIVE_STRENGTH::class, 'getPage']);;
+Route::post('/VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO', [CONCRETE_COMPRESSIVE_STRENGTH::class, 'postPage'])->name('VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO');
+
+
+/*
+|--------------------------------------------------------------------------
+| Routes For 105_CONCRETE_MIX_DESIGN
+|--------------------------------------------------------------------------
+*/
+Route::get('/105_CONCRETE_MIX_DESIGN', [CONCRETE_MIX_DESIGN::class, 'getPage']);;
+Route::post('/VIEW_105_CONCRETE_MIX_DESIGN', [CONCRETE_MIX_DESIGN::class, 'postPage'])->name('VIEW_105_CONCRETE_MIX_DESIGN');
 
 
