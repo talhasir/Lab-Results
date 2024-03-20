@@ -34,9 +34,11 @@
         border: 1px solid #dddddd;
     }
 
-    td input {
+    td input,
+    td span {
         width: 100%;
         padding: 0.2vw;
+        text-align: center;
     }
 
     table thead th {
@@ -44,22 +46,24 @@
         background-color: #f2f2f2;
         text-align: center;
     }
+
     table tbody td {
         text-align: center;
     }
 
-    ul li{
+    ul li {
         text-align: center;
     }
 
-    table td input{
+    table td input {
         background: #ffffcc;
     }
 
-    table #result{
+    table #result {
         border: 1px solid gray;
         background: rgb(222, 221, 221);
     }
+
     @media only screen and (max-width: 600px) {
         table {
             border: 0;
@@ -111,7 +115,8 @@
                     </div>
                 </div>
                 <div class="col-span-2 flex justify-center items-center" style="border: 1px solid gray;">
-                    <h1 class="lg:text-xl text-center md:text-base sm:text-sm font-bold">CLAY LUMPS TN AGGREGATE (ASTM C-142)</h1>
+                    <h1 class="lg:text-xl text-center md:text-base sm:text-sm font-bold">CLAY LUMPS TN AGGREGATE (ASTM
+                        C-142)</h1>
                 </div>
                 <div class="flex flex-col">
                     <input required type="text" placeholder="Doc#">
@@ -122,7 +127,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_82_Brick_Testing', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'VIEW 55-CLAY LUMPS IN AGGREGATE', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
 
                     <div>
@@ -194,7 +199,17 @@
                                 </tr>
                                 <tr>
                                     <td><input type="text" name="A11" id=""></td>
-                                    <td><input type="text" name="12" id=""></td>
+                                    <td><input type="text" name="B11" id=""></td>
+                                    <td><input type="text" name="E11" id=""></td>
+                                    <td><input type="text" name="F11" id=""></td>
+                                    <td><input type="text" name="G11" id=""></td>
+                                    <td id="result"></td>
+                                    <td id="result"></td>
+                                    <td id="result"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="A12" id=""></td>
+                                    <td><input type="text" name="B12" id=""></td>
                                     <td><input type="text" name="E12" id=""></td>
                                     <td><input type="text" name="F12" id=""></td>
                                     <td><input type="text" name="G12" id=""></td>

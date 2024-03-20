@@ -60,6 +60,14 @@
     table #result {
         border: 1px solid gray;
         background: rgb(222, 221, 221);
+        font-weight: bold;
+    }
+
+    table input,
+    table,
+    span,
+    td {
+        text-align: center;
     }
 
     table #sizeOfAggCol {
@@ -128,7 +136,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_82_Brick_Testing', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'VIEW_81_BLENDING_OF_AGGREGATES', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">
@@ -200,71 +208,72 @@
                                 <td>1</td>
                                 <td colspan="2" id="sizeOfAggCol">Size of Aggregate 1</td>
                                 <td>%</td>
-                                <td><input type="text" name="F11" id=""></td>
-                                <td><input type="text" name="G11" id=""></td>
-                                <td><input type="text" name="I11" id=""></td>
-                                <td><input type="text" name="J11" id=""></td>
-                                <td><input type="text" name="K11" id=""></td>
-                                <td><input type="text" name="M11" id=""></td>
-                                <td><input type="text" name="N11" id=""></td>
-                                <td><input type="text" name="O11" id=""></td>
-                                <td><input type="text" name="Q11" id=""></td>
-                                <td><input type="text" name="R11" id=""></td>
-                                <td><input type="text" name="S11" id=""></td>
-                                <td><input type="text" name="T11" id=""></td>
-                                <td><input type="text" name="U11" id=""></td>
-                                <td><input type="text" name="V11" id=""></td>
-                                <td><input type="text" name="W11" id=""></td>
-                                <td><input type="text" name="X11" id=""></td>
+                                <td><input type="number" name="F11" id=""></td>
+                                <td><input type="number" name="G11" id=""></td>
+                                <td><input type="number" name="I11" id=""></td>
+                                <td><input type="number" name="J11" id=""></td>
+                                <td><input type="number" name="K11" id=""></td>
+                                <td><input type="number" name="M11" id=""></td>
+                                <td><input type="number" name="N11" id=""></td>
+                                <td><input type="number" name="O11" id=""></td>
+                                <td><input type="number" name="Q11" id=""></td>
+                                <td><input type="number" name="R11" id=""></td>
+                                <td><input type="number" name="S11" id=""></td>
+                                <td><input type="number" name="T11" id=""></td>
+                                <td><input type="number" name="U11" id=""></td>
+                                <td><input type="number" name="V11" id=""></td>
+                                <td><input type="number" name="W11" id=""></td>
+                                <td><input type="number" name="X11" id=""></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td colspan="2" id="sizeOfAggCol">Size of Aggregate 2</td>
                                 <td>%</td>
-                                <td><input type="text" name="F12" id=""></td>
-                                <td><input type="text" name="G12" id=""></td>
-                                <td><input type="text" name="I12" id=""></td>
-                                <td><input type="text" name="J12" id=""></td>
-                                <td><input type="text" name="K12" id=""></td>
-                                <td><input type="text" name="M12" id=""></td>
-                                <td><input type="text" name="N12" id=""></td>
-                                <td><input type="text" name="O12" id=""></td>
-                                <td><input type="text" name="Q12" id=""></td>
-                                <td><input type="text" name="R12" id=""></td>
-                                <td><input type="text" name="S12" id=""></td>
-                                <td><input type="text" name="T12" id=""></td>
-                                <td><input type="text" name="U12" id=""></td>
-                                <td><input type="text" name="V12" id=""></td>
-                                <td><input type="text" name="W12" id=""></td>
-                                <td><input type="text" name="X12" id=""></td>
+                                <td><input type="number" name="F12" id=""></td>
+                                <td><input type="number" name="G12" id=""></td>
+                                <td><input type="number" name="I12" id=""></td>
+                                <td><input type="number" name="J12" id=""></td>
+                                <td><input type="number" name="K12" id=""></td>
+                                <td><input type="number" name="M12" id=""></td>
+                                <td><input type="number" name="N12" id=""></td>
+                                <td><input type="number" name="O12" id=""></td>
+                                <td><input type="number" name="Q12" id=""></td>
+                                <td><input type="number" name="R12" id=""></td>
+                                <td><input type="number" name="S12" id=""></td>
+                                <td><input type="number" name="T12" id=""></td>
+                                <td><input type="number" name="U12" id=""></td>
+                                <td><input type="number" name="V12" id=""></td>
+                                <td><input type="number" name="W12" id=""></td>
+                                <td><input type="number" name="X12" id=""></td>
                             </tr>
                             <tr>
                                 <td>3</td>
                                 <td colspan="2" id="sizeOfAggCol">Size of Aggregate 3</td>
                                 <td>%</td>
-                                <td><input type="text" name="F13" id=""></td>
-                                <td><input type="text" name="G13" id=""></td>
-                                <td><input type="text" name="I13" id=""></td>
-                                <td><input type="text" name="J13" id=""></td>
-                                <td><input type="text" name="K13" id=""></td>
-                                <td><input type="text" name="M13" id=""></td>
-                                <td><input type="text" name="N13" id=""></td>
-                                <td><input type="text" name="O13" id=""></td>
-                                <td><input type="text" name="Q13" id=""></td>
-                                <td><input type="text" name="R13" id=""></td>
-                                <td><input type="text" name="S13" id=""></td>
-                                <td><input type="text" name="T13" id=""></td>
-                                <td><input type="text" name="U13" id=""></td>
-                                <td><input type="text" name="V13" id=""></td>
-                                <td><input type="text" name="W13" id=""></td>
-                                <td><input type="text" name="X13" id=""></td>
+                                <td><input type="number" name="F13" id=""></td>
+                                <td><input type="number" name="G13" id=""></td>
+                                <td><input type="number" name="I13" id=""></td>
+                                <td><input type="number" name="J13" id=""></td>
+                                <td><input type="number" name="K13" id=""></td>
+                                <td><input type="number" name="M13" id=""></td>
+                                <td><input type="number" name="N13" id=""></td>
+                                <td><input type="number" name="O13" id=""></td>
+                                <td><input type="number" name="Q13" id=""></td>
+                                <td><input type="number" name="R13" id=""></td>
+                                <td><input type="number" name="S13" id=""></td>
+                                <td><input type="number" name="T13" id=""></td>
+                                <td><input type="number" name="U13" id=""></td>
+                                <td><input type="number" name="V13" id=""></td>
+                                <td><input type="number" name="W13" id=""></td>
+                                <td><input type="number" name="X13" id=""></td>
                             </tr>
                             <tr>
                                 <td colspan="2">Combined Gradation</td>
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td colspan="2" id="sizeOfAggCol">Size of Aggregate 1</td>
+                                <td colspan="2" id="sizeOfAggCol"><input type="number" name="B15"
+                                        id=""></td>
                                 <td>%</td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -285,7 +294,8 @@
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td colspan="2" id="sizeOfAggCol">Size of Aggregate 2</td>
+                                <td colspan="2" id="sizeOfAggCol"><input type="number" name="B16"
+                                        id=""></td>
                                 <td>%</td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -306,7 +316,9 @@
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td colspan="2" id="sizeOfAggCol">Size of Aggregate 3</td>
+                                <td colspan="2" id="sizeOfAggCol"><input type="number" name="B17"
+                                        id="">
+                                </td>
                                 <td>%</td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -366,21 +378,21 @@
                             </tr>
                             <tr>
                                 <td>Limits</td>
-                                <td><input type="text" name="F20" id=""></td>
-                                <td><input type="text" name="G20" id=""></td>
-                                <td><input type="text" name="I20" id=""></td>
+                                <td><input type="number" name="F20" id=""></td>
+                                <td><input type="number" name="G20" id=""></td>
+                                <td><input type="number" name="I20" id=""></td>
                                 <td id="result">100</td>
                                 <td id="result">75~90</td>
                                 <td id="result">'60~80</td>
                                 <td id="result">40~60</td>
                                 <td id="result">20~40</td>
-                                <td><input type="text" name="Q20" id=""></td>
-                                <td><input type="text" name="R20" id=""></td>
-                                <td><input type="text" name="S20" id=""></td>
-                                <td><input type="text" name="T20" id=""></td>
+                                <td><input type="number" name="Q20" id=""></td>
+                                <td><input type="number" name="R20" id=""></td>
+                                <td><input type="number" name="S20" id=""></td>
+                                <td><input type="number" name="T20" id=""></td>
                                 <td id="result">5~15</td>
-                                <td><input type="text" name="V20" id=""></td>
-                                <td><input type="text" name="W20" id=""></td>
+                                <td><input type="number" name="V20" id=""></td>
+                                <td><input type="number" name="W20" id=""></td>
                                 <td id="result">3~8</td>
                             </tr>
                         </tbody>

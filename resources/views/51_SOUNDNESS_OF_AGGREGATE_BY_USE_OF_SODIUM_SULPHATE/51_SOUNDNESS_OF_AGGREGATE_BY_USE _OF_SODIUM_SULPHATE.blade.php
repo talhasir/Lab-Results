@@ -34,9 +34,11 @@
         border: 1px solid #dddddd;
     }
 
-    td input {
+    td input,
+    td span {
         width: 100%;
         padding: 0.2vw;
+        text-align: center
     }
 
     table thead th {
@@ -44,22 +46,24 @@
         background-color: #f2f2f2;
         text-align: center;
     }
+
     table tbody td {
         text-align: center;
     }
 
-    ul li{
+    ul li {
         text-align: center;
     }
 
-    table td input{
+    table td input {
         background: #ffffcc;
     }
 
-    table #result{
+    table #result {
         border: 1px solid gray;
         background: rgb(222, 221, 221);
     }
+
     @media only screen and (max-width: 600px) {
         table {
             border: 0;
@@ -111,7 +115,8 @@
                     </div>
                 </div>
                 <div class="col-span-2 flex justify-center items-center" style="border: 1px solid gray;">
-                    <h1 class="lg:text-xl text-center md:text-base sm:text-sm font-bold">SOUNDNESS OF AGGREGATE BY USE OF SODIUM
+                    <h1 class="lg:text-xl text-center md:text-base sm:text-sm font-bold">SOUNDNESS OF AGGREGATE BY USE
+                        OF SODIUM
                         SULPHATE (ASTM C-88)SOUNDNESS OF AGGREGATE BY USE OF SODIUM SULPHATE (ASTM C-88)</h1>
                 </div>
                 <div class="flex flex-col">
@@ -123,7 +128,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_82_Brick_Testing', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'VIEW_51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">
@@ -149,7 +154,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th class="text-center">Sieve Passing (mm)</th>
+                                <th class="items-center">Sieve Passing (mm)</th>
                                 <th>Size Retained
                                     (mm)</th>
                                 <th>Grading Original Sample Retained (%)</th>
@@ -167,19 +172,19 @@
                             <tr>
                                 <td>0.15</td>
                                 <td>--</td>
-                                <td><input type="text" name="DB" id=""></td>
-                                <td><input type="text" name="G8" id=""></td>
-                                <td><input type="text" name="I8" id=""></td>
-                                <td><input type="text" name="J8" id=""></td>
-                                <td><input type="text" name="L8" id=""></td>
-                                <td><input type="text" name="N8" id=""></td>
+                                <td><input required type="number" name="DB" id=""></td>
+                                <td><input required type="number" name="G8" id=""></td>
+                                <td><input required type="number" name="I8" id=""></td>
+                                <td><input required type="number" name="J8" id=""></td>
+                                <td><input required type="number" name="L8" id=""></td>
+                                <td><input required type="number" name="N8" id=""></td>
                             </tr>
                             <tr>
                                 <td>1.15</td>
                                 <td>0.15</td>
-                                <td><input type="text" name="D9" id=""></td>
-                                <td><input type="text" name="G9" id=""></td>
-                                <td><input type="text" name="I9" id=""></td>
+                                <td><input required type="number" name="D9" id=""></td>
+                                <td><input required type="number" name="G9" id=""></td>
+                                <td><input required type="number" name="I9" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -187,9 +192,9 @@
                             <tr>
                                 <td>0.6</td>
                                 <td>0.3</td>
-                                <td><input type="text" name="D10" id=""></td>
-                                <td><input type="text" name="G10" id=""></td>
-                                <td><input type="text" name="I10" id=""></td>
+                                <td><input required type="number" name="D10" id=""></td>
+                                <td><input required type="number" name="G10" id=""></td>
+                                <td><input required type="number" name="I10" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -197,9 +202,9 @@
                             <tr>
                                 <td>1.18</td>
                                 <td>0.6</td>
-                                <td><input type="text" name="D11" id=""></td>
-                                <td><input type="text" name="G11" id=""></td>
-                                <td><input type="text" name="I11" id=""></td>
+                                <td><input required type="number" name="D11" id=""></td>
+                                <td><input required type="number" name="G11" id=""></td>
+                                <td><input required type="number" name="I11" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -207,9 +212,9 @@
                             <tr>
                                 <td>2.36</td>
                                 <td>1.18</td>
-                                <td><input type="text" name="D12" id=""></td>
-                                <td><input type="text" name="G12" id=""></td>
-                                <td><input type="text" name="I12" id=""></td>
+                                <td><input required type="number" name="D12" id=""></td>
+                                <td><input required type="number" name="G12" id=""></td>
+                                <td><input required type="number" name="I12" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -217,9 +222,9 @@
                             <tr>
                                 <td>4.75</td>
                                 <td>2.36</td>
-                                <td><input type="text" name="D13" id=""></td>
-                                <td><input type="text" name="G13" id=""></td>
-                                <td><input type="text" name="I13" id=""></td>
+                                <td><input required type="number" name="D13" id=""></td>
+                                <td><input required type="number" name="G13" id=""></td>
+                                <td><input required type="number" name="I13" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -227,9 +232,9 @@
                             <tr>
                                 <td>9.5</td>
                                 <td>4.75</td>
-                                <td><input type="text" name="D14" id=""></td>
-                                <td><input type="text" name="G14" id=""></td>
-                                <td><input type="text" name="I14" id=""></td>
+                                <td><input required type="number" name="D14" id=""></td>
+                                <td><input required type="number" name="G14" id=""></td>
+                                <td><input required type="number" name="I14" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -246,9 +251,9 @@
                             <tr>
                                 <td>9.5mm9.5mm</td>
                                 <td>4.75mm4.75mm</td>
-                                <td><input type="text" name="D16" id=""></td>
-                                <td><input type="text" name="G16" id=""></td>
-                                <td><input type="text" name="I16" id=""></td>
+                                <td><input required type="number" name="D16" id=""></td>
+                                <td><input required type="number" name="G16" id=""></td>
+                                <td><input required type="number" name="I16" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -256,9 +261,9 @@
                             <tr>
                                 <td>19</td>
                                 <td>9.5</td>
-                                <td><input type="text" name="D17" id=""></td>
-                                <td><input type="text" name="G17" id=""></td>
-                                <td><input type="text" name="I17" id=""></td>
+                                <td><input required type="number" name="D17" id=""></td>
+                                <td><input required type="number" name="G17" id=""></td>
+                                <td><input required type="number" name="I17" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -266,9 +271,9 @@
                             <tr>
                                 <td>38</td>
                                 <td>19</td>
-                                <td><input type="text" name="D18" id=""></td>
-                                <td><input type="text" name="G18" id=""></td>
-                                <td><input type="text" name="I18" id=""></td>
+                                <td><input required type="number" name="D18" id=""></td>
+                                <td><input required type="number" name="G18" id=""></td>
+                                <td><input required type="number" name="I18" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
@@ -276,9 +281,9 @@
                             <tr>
                                 <td>63</td>
                                 <td>38</td>
-                                <td><input type="text" name="D19" id=""></td>
-                                <td><input type="text" name="G19" id=""></td>
-                                <td><input type="text" name="I19" id=""></td>
+                                <td><input required type="number" name="D19" id=""></td>
+                                <td><input required type="number" name="G19" id=""></td>
+                                <td><input required type="number" name="I19" id=""></td>
                                 <td id="result"></td>
                                 <td id="result"></td>
                                 <td id="result"></td>

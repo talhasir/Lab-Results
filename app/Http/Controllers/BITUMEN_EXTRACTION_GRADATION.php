@@ -2,99 +2,96 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BITUMEN_EXTRACTION_GRADATION as ModelsBITUMEN_EXTRACTION_GRADATION;
 use Illuminate\Http\Request;
-use App\Models\FieldDensityModel;
+use App\Models\Soundness_of_aggregate_by_use_of_sodium_sulphate;
 
 class BITUMEN_EXTRACTION_GRADATION extends Controller
 {
     public function getPage()
     {
-        return view('73-BITUMEN EXTRACTION, GRADATION/73_BITUMEN_EXTRACTION_GRADATION');
+        return view('73_BITUMEN_EXTRACTION_GRADATION/73_BITUMEN_EXTRACTION_GRADATION');
     }
 
     public function postPage(Request $request)
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = FieldDensityModel::create([
+        $dataStoring = ModelsBITUMEN_EXTRACTION_GRADATION::create([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = FieldDensityModel::where('id', $dataStoring->id)->first();
+        $dataRetrieving = ModelsBITUMEN_EXTRACTION_GRADATION::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
-        // RESULTS Wt. of Used Sand (Hole + Cone)  //
-        $G18 = $data->G16 - $data->G17;
-        $I18 = $data->I16 - $data->I17;
-        $K18 = $data->K16 - $data->K17;
-        $M18 = $data->M16 - $data->M17;
-        $ResultsForUsedSand = compact('G18', 'I18', 'K18', 'M18');
+        ###########################################
+        // RESULTS Weight Of Filter After Test //
+        ###########################################
+        $L12 = $data->J12 / $data->J22 * 100;
+        $L13 = $data->J13 / $data->J22 * 100;
+        $N12 = 100 - $L12;
+        $N13 = 100 - $L13;
+        $RsOfWeightOfFilterAftTest = compact('L12', 'L13', 'N12', 'N13');
 
-        // RESULTS Wt. of Sand in Hole  //
-        $G20 = $G18 - $data->G19;
-        $I20 = $I18 - $data->I19;
-        $K20 = $K18 - $data->K19;
-        $M20 = $M18 - $data->M19;
-        $ResultsForSandInHole = compact('G20', 'I20', 'K20', 'M20');
 
-        // RESULTS  Volume of Material from Hole  //
-        $G22 = $G20 / $data->G21;
-        $I22 = $I20 / $data->I21;
-        $K22 = $K20 / $data->K21;
-        $M22 = $M20 / $data->M21;
-        $ResultsForVolumnOfMaterial = compact('G22', 'I22','K22','M22',);
+        ###########################################
+        // RESULTS Weight Of Agg. after Test //
+        ###########################################
+        $L14 = $data->J14 / $data->J22 * 100;
+        $L15 = $data->J15 / $data->J22 * 100;
+        $N14 = 100 - $L14;
+        $N15 = 100 - $L15;
+        $RsOfWeightOfAggAftTest = compact('L14', 'L15', 'N14', 'N15');
 
-        // RESULTS  Wet Density of Material from Hole  //
-        $G23 = $data->G14 / $G22;
-        $I23 = $data->I14 / $I22;
-        $K23 = $data->K14 / $K22;
-        $M23 = $data->M14 / $M22;
-        $ResultsForWetDensity = compact('G23', 'I23', 'K23', 'M23', );
 
-        // RESULTS  Dry Density of Material from Hole  //
-        $O = 100;
-        $P = 100;
-        $Q = 100;
-        $R = 100;
+        ###########################################
+        // RESULTS Total Weight Of Aggregate //
+        ###########################################
+        $C16 = $data->C14 + ($data->C12 - $data->C11);
+        $E16 = $data->E14 + ($data->E12 - $data->E11);
+        $G16 = $data->G14 + ($data->G12 - $data->G11);
+        $L16 = $data->J16 / $data->J22 * 100;
+        $N16 = 100 - $L16;
+        $RsOfTotalWeightOfAgg = compact('C16', 'E16', 'G16');
 
-        // $G29 = ($G23 / $O28) * 100;
-        // $I29 = ($I23 / $P28) * 100;
-        // $K29 = ($K23 / $Q28) * 100;
-        // $M29 = ($M23 / $R28) * 100;
-        // $ResultsForDryDensity = compact('G29', 'I29', 'K29', 'M29', );
 
-        // RESULTS  Compaction Obtained  //
-        $G36 = ($G29 / $data->G33) * 100;
-        $I36 = ($I29 / $data->I33) * 100;
-        $K36 = ($K29 / $data->K33) * 100;
-        $M36 = ($M29 / $data->M33) * 100;
-        $ResultsForCompaction = compact('G36', 'I36', 'K36', 'M36', );
+        ###########################################
+        // RESULTS Loss of Weight //
+        ###########################################
+        $C18 = $data->C10 - $C16;
+        $E18 = $data->E10 - $E16;
+        $G18 = $data->G10 - $G16;
+        $RsOFLossOfWt = compact('C18', 'E18', 'G18');
 
-        // RESULTS  Compaction Reported  //
-        $G37 = $G36;
-        $I37 = $I36;
-        $K37 = ($K29 / $data->K33) * 100;
-        $M37 = $M36;
-        $ResultsForCompactionReport = compact('G37', 'I37', 'K37', 'M37', );
 
-        // RESULTS Pass/Fail //
-        $G40 = $G37 < $G38 ? 'FAIL' : 'PASS';
-        $I40 = $I37 < $I38 ? 'FAIL' : 'PASS';
-        $K40 = $K37 < $K38 ? 'FAIL' : 'PASS';
-        $M40 = $M37 < $M38 ? 'FAIL' : 'PASS';
-        $finalResults = compact('G40', 'I40', 'K40', 'M40', );
+        ###########################################
+        // RESULTS Bitumen By Weight of Mix //
+        ###########################################
+        $C19 = $C18 / $data->C10 * 100;
+        $E19 = $E18 / $data->E10 * 100;
+        $G19 = $G18 / $data->G10 * 100;
+        $L19 = $data->J19 / $data->J22 * 100;
+        $N19 = 100 -$L19;
+        $RsBitumenByWeight = compact('C19', 'E19', 'G19', 'L19', 'N19');
 
-        return view('FIELD DENSITY/view_42_FIELD_DENSITY_TEST')->with(
+
+        ###########################################
+        // RESULTS Avg. Bit. By Wt. of Agg. //
+        ###########################################
+        $C20 = $C19 + $E19 + $G19 / 3;    // AVERAGE(C19:H19) //
+        $L20 = $data->J20 / $data->J22 * 100;
+        $N20 = 100 - $L20;
+        $RsAvgBitByWtOfAgg = compact('C20', 'L20', 'N20');
+
+        return view('73_BITUMEN_EXTRACTION_GRADATION/VIEW_73_BITUMEN_EXTRACTION_GRADATION')->with(
             compact(
                 'data',
-                'ResultsForUsedSand',
-                'ResultsForSandInHole',
-                'ResultsForVolumnOfMaterial',
-                'ResultsForWetDensity',
-                // 'ResultsForDryDensity',
-                'ResultsForCompaction',
-                'ResultsForCompactionReport',
-                'finalResults',
+                'RsOfWeightOfFilterAftTest',
+                'RsOfWeightOfAggAftTest',
+                'RsOFLossOfWt',
+                'RsOfTotalWeightOfAgg',
+                'RsBitumenByWeight',
+                'RsAvgBitByWtOfAgg',
             ),
         );
     }

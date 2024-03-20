@@ -61,6 +61,14 @@
     table #result {
         border: 1px solid gray;
         background: rgb(222, 221, 221);
+        font-weight: bold;
+    }
+
+    table input,
+    table,
+    span,
+    td {
+        text-align: center;
     }
 
     @media only screen and (max-width: 600px) {
@@ -87,6 +95,7 @@
         table td {
             padding: 10px;
             position: relative;
+            text-align: center
         }
 
         table td::before {
@@ -126,7 +135,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_82_Brick_Testing', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'VIEW_73_BITUMEN_EXTRACTION_GRADATION', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
 
                     <div>
@@ -172,66 +181,66 @@
                             <tbody>
                                 <tr>
                                     <td>Weight Of Mix</td>
-                                    <td><input type="text" name="C10" id=""></td>
-                                    <td><input type="text" name="E10" id=""></td>
-                                    <td><input type="text" name="G10" id=""></td>
+                                    <td><input type="number" name="C10" id=""></td>
+                                    <td><input type="number" name="E10" id=""></td>
+                                    <td><input type="number" name="G10" id=""></td>
                                     <td>1 ½”</td>
-                                    <td><input type="text" name="J10" id=""></td>
-                                    <td><input type="text" name="L10" id=""></td>
-                                    <td><input type="text" name="N10" id=""></td>
-                                    <td colspan="2"><input type="text" name="P10" id=""></td>
+                                    <td><input type="number" name="J10" id=""></td>
+                                    <td><input type="number" name="L10" id=""></td>
+                                    <td><input type="number" name="N10" id=""></td>
+                                    <td colspan="2"><input type="number" name="P10" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>Weight Of Filter Before Test</td>
-                                    <td><input type="text" name="C11" id=""></td>
-                                    <td><input type="text" name="E11" id=""></td>
-                                    <td><input type="text" name="G11" id=""></td>
+                                    <td><input type="number" name="C11" id=""></td>
+                                    <td><input type="number" name="E11" id=""></td>
+                                    <td><input type="number" name="G11" id=""></td>
                                     <td>1”</td>
-                                    <td><input type="text" name="J11" id=""></td>
-                                    <td><input type="text" name="L11" id=""></td>
-                                    <td><input type="text" name="N11" id=""></td>
-                                    <td><input type="text" name="P11" id=""></td>
-                                    <td><input type="text" name="Q11" id=""></td>
+                                    <td><input type="number" name="J11" id=""></td>
+                                    <td><input type="number" name="L11" id=""></td>
+                                    <td><input type="number" name="N11" id=""></td>
+                                    <td><input type="number" name="P11" id=""></td>
+                                    <td><input type="number" name="Q11" id=""></td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">Weight Of Filter Before Test</td>
-                                    <td rowspan="2"><input type="text" name="C12" id=""></td>
-                                    <td rowspan="2"><input type="text" name="E12" id=""></td>
-                                    <td rowspan="2"><input type="text" name="G12" id=""></td>
+                                    <td rowspan="2"><input type="number" name="C12" id=""></td>
+                                    <td rowspan="2"><input type="number" name="E12" id=""></td>
+                                    <td rowspan="2"><input type="number" name="G12" id=""></td>
                                     <td>¾”</td>
-                                    <td><input type="text" name="J12" id=""></td>
+                                    <td><input type="number" name="J12" id=""></td>
                                     <td id="result"></td>
                                     <td id="result"></td>
-                                    <td><input type="text" name="P12" id=""></td>
-                                    <td><input type="text" name="Q12" id=""></td>
+                                    <td><input type="number" name="P12" id=""></td>
+                                    <td><input type="number" name="Q12" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>½”</td>
-                                    <td><input type="text" name="J13" id=""></td>
+                                    <td><input type="number" name="J13" id=""></td>
                                     <td id="result"></td>
                                     <td id="result"></td>
-                                    <td><input type="text" name="P13" id=""></td>
-                                    <td><input type="text" name="Q13" id=""></td>
+                                    <td><input type="number" name="P13" id=""></td>
+                                    <td><input type="number" name="Q13" id=""></td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">Weight Of Agg. after Test</td>
-                                    <td rowspan="2"><input type="text" name="C14" id=""></td>
-                                    <td rowspan="2"><input type="text" name="E14" id=""></td>
-                                    <td rowspan="2"><input type="text" name="G14" id=""></td>
+                                    <td rowspan="2"><input type="number" name="C14" id=""></td>
+                                    <td rowspan="2"><input type="number" name="E14" id=""></td>
+                                    <td rowspan="2"><input type="number" name="G14" id=""></td>
                                     <td>⅜”</td>
-                                    <td><input type="text" name="J14" id=""></td>
+                                    <td><input type="number" name="J14" id=""></td>
                                     <td id="result"></td>
                                     <td id="result"></td>
-                                    <td><input type="text" name="P14" id=""></td>
-                                    <td><input type="text" name="Q14" id=""></td>
+                                    <td><input type="number" name="P14" id=""></td>
+                                    <td><input type="number" name="Q14" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>#4</td>
-                                    <td><input type="text" name="J15" id=""></td>
+                                    <td><input type="number" name="J15" id=""></td>
                                     <td id="result"></td>
                                     <td id="result"></td>
-                                    <td><input type="text" name="P15" id=""></td>
-                                    <td><input type="text" name="Q15" id=""></td>
+                                    <td><input type="number" name="P15" id=""></td>
+                                    <td><input type="number" name="Q15" id=""></td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">Total Weight Of Aggregate</td>
@@ -239,18 +248,18 @@
                                     <td rowspan="2" id="result"></td>
                                     <td rowspan="2" id="result"></td>
                                     <td>#8</td>
-                                    <td><input type="text" name="J16" id=""></td>
+                                    <td><input type="number" name="J16" id=""></td>
                                     <td id="result"></td>
                                     <td id="result"></td>
-                                    <td><input type="text" name="P16" id=""></td>
-                                    <td><input type="text" name="Q16" id=""></td>
+                                    <td><input type="number" name="P16" id=""></td>
+                                    <td><input type="number" name="Q16" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>#20</td>
-                                    <td><input type="text" name="J17" id=""></td>
-                                    <td><input type="text" name="L17" id=""></td>
-                                    <td><input type="text" name="N17" id=""></td>
-                                    <td colspan="2"><input type="text" name="P17" id=""></td>
+                                    <td><input type="number" name="J17" id=""></td>
+                                    <td><input type="number" name="L17" id=""></td>
+                                    <td><input type="number" name="N17" id=""></td>
+                                    <td colspan="2"><input type="number" name="P17" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>Loss of Weight</td>
@@ -258,10 +267,10 @@
                                     <td id="result"></td>
                                     <td id="result"></td>
                                     <td>#40</td>
-                                    <td><input type="text" name="J18" id=""></td>
-                                    <td><input type="text" name="L18" id=""></td>
-                                    <td><input type="text" name="N18" id=""></td>
-                                    <td colspan="2"><input type="text" name="P18" id=""></td>
+                                    <td><input type="number" name="J18" id=""></td>
+                                    <td><input type="number" name="L18" id=""></td>
+                                    <td><input type="number" name="N18" id=""></td>
+                                    <td colspan="2"><input type="number" name="P18" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>Bitumen By Weight of Mix</td>
@@ -269,39 +278,39 @@
                                     <td id="result"></td>
                                     <td id="result"></td>
                                     <td>#50</td>
-                                    <td><input type="text" name="J19" id=""></td>
+                                    <td><input type="number" name="J19" id=""></td>
                                     <td id="result"></td>
                                     <td id="result"></td>
-                                    <td><input type="text" name="P19" id=""></td>
-                                    <td><input type="text" name="Q19" id=""></td>
+                                    <td><input type="number" name="P19" id=""></td>
+                                    <td><input type="number" name="Q19" id=""></td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">Avg. Bit. By Wt. of Agg.</td>
                                     <td rowspan="2" colspan="3" id="result"></td>
                                     <td>#200</td>
-                                    <td><input type="text" name="J20" id=""></td>
+                                    <td><input type="number" name="J20" id=""></td>
                                     <td id="result"></td>
                                     <td id="result"></td>
-                                    <td><input type="text" name="P20" id=""></td>
-                                    <td><input type="text" name="Q20" id=""></td>
+                                    <td><input type="number" name="P20" id=""></td>
+                                    <td><input type="number" name="Q20" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>Pan</td>
-                                    <td><input type="text" name="J21" id=""></td>
-                                    <td><input type="text" name="L21" id=""></td>
-                                    <td><input type="text" name="N21" id=""></td>
-                                    <td><input type="text" name="P21" id=""></td>
-                                    <td><input type="text" name="Q21" id=""></td>
+                                    <td><input type="number" name="J21" id=""></td>
+                                    <td><input type="number" name="L21" id=""></td>
+                                    <td><input type="number" name="N21" id=""></td>
+                                    <td><input type="number" name="P21" id=""></td>
+                                    <td><input type="number" name="Q21" id=""></td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">Avg. Bit. By Wt. of Mix</td>
-                                    <td colspan="3"><input type="text" name="C22" id=""></td>
+                                    <td colspan="3"><input type="number" name="C22" id=""></td>
                                     <td>Total (gm)</td>
-                                    <td><input type="text" name="J22" id=""></td>
-                                    <td><input type="text" name="L22" id=""></td>
-                                    <td><input type="text" name="N22" id=""></td>
-                                    <td><input type="text" name="P22" id=""></td>
-                                    <td><input type="text" name="Q22" id=""></td>
+                                    <td><input type="number" name="J22" id=""></td>
+                                    <td><input type="number" name="L22" id=""></td>
+                                    <td><input type="number" name="N22" id=""></td>
+                                    <td><input type="number" name="P22" id=""></td>
+                                    <td><input type="number" name="Q22" id=""></td>
                                 </tr>
                             </tbody>
                         </table>

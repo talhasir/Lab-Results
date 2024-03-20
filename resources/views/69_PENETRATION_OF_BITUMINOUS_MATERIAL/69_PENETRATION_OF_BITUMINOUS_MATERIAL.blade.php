@@ -34,30 +34,33 @@
         border: 1px solid #dddddd;
     }
 
-    td input {
+    td input,
+    td span {
         width: 100%;
         padding: 0.2vw;
+        text-align: center;
     }
 
     table thead th {
         background-color: #f2f2f2;
         text-align: center;
     }
-    table tbody td {
-    }
 
-    ul li{
+    table tbody td {}
+
+    ul li {
         text-align: center;
     }
 
-    table td input{
+    table td input {
         background: #ffffcc;
     }
 
-    table #result{
+    table #result {
         border: 1px solid gray;
         background: rgb(222, 221, 221);
     }
+
     @media only screen and (max-width: 600px) {
         table {
             border: 0;
@@ -122,7 +125,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_82_Brick_Testing', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'VIEW_69_PENETRATION_OF_BITUMINOUS_MATERIAL', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">
@@ -181,7 +184,7 @@
                             </tr>
                             <tr>
                                 <td rowspan="3" class="px-3">
-                                    Cut-Back Asphalt Prime Coat Penetration (  )
+                                    Cut-Back Asphalt Prime Coat Penetration ( )
                                 </td>
                                 <td class="">
                                     <input type="text" name="C11" id="">
@@ -205,7 +208,7 @@
                             </tr>
                             <tr>
                                 <td rowspan="3" class="px-3">
-                                    Cut-Back Asphalt Tack Coat Penetration (          )
+                                    Cut-Back Asphalt Tack Coat Penetration ( )
                                 </td>
                                 <td class="">
                                     <input type="text" name="C14" id="">
@@ -228,11 +231,17 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="" colspan="2">
-                                    <input type="text" name="B17" id="" placeholder="Sample No.">
+                                <td class="">
+                                    <p class="text-center">Smaple No.</p>
                                 </td>
-                                <td class="" colspan="2">
-                                    <input type="text" name="F17" id="" placeholder="Lab No.">
+                                <td class="">
+                                    <input type="text" name="B17" id="">
+                                </td>
+                                <td class="">
+                                    <p class="text-center">Lab No.</p>
+                                </td>
+                                <td class="">
+                                    <input type="text" name="F17" id="">
                                 </td>
                             </tr>
 
@@ -277,7 +286,7 @@
                             </tr>
                             <tr>
                                 <td rowspan="3" class="px-3">
-                                    Cut-Back Asphalt Prime Coat Penetration (  )
+                                    Cut-Back Asphalt Prime Coat Penetration ( )
                                 </td>
                                 <td class="">
                                     <input type="text" name="C22" id="">
@@ -301,7 +310,7 @@
                             </tr>
                             <tr>
                                 <td rowspan="3" class="px-3">
-                                    Cut-Back Asphalt Tack Coat Penetration (          )
+                                    Cut-Back Asphalt Tack Coat Penetration ( )
                                 </td>
                                 <td class="">
                                     <input type="text" name="C25" id="">

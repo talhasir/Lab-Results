@@ -43,21 +43,22 @@
         background-color: #f2f2f2;
         text-align: center;
     }
-    table tbody td {
-    }
 
-    ul li{
+    table tbody td {}
+
+    ul li {
         text-align: center;
     }
 
-    table td input{
+    table td input {
         background: #ffffcc;
     }
 
-    table #result{
+    table #result {
         border: 1px solid gray;
         background: rgb(222, 221, 221);
     }
+
     @media only screen and (max-width: 600px) {
         table {
             border: 0;
@@ -122,7 +123,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_82_Brick_Testing', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'VIEW_54_UNIT_WEIGHT_OF_AGGREGATE', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">
@@ -151,7 +152,7 @@
                         <thead>
                             <tr>
                                 <th rowspan="2" colspan="5">
-                                    A-  LOOSE WETGHT DETERMTNATTON
+                                    A- LOOSE WETGHT DETERMTNATTON
                                 </th>
                                 <th colspan="3">DETERMTNATTON</th>
                             </tr>
@@ -173,7 +174,7 @@
                             </tr>
                             <tr>
                                 <td colspan="4">
-                                    (ii)    Wt. of measure
+                                    (ii) Wt. of measure
                                 </td>
                                 <td>(g)</td>
                                 <td><input type="text" name="H10" id=""></td>
@@ -182,7 +183,7 @@
                             </tr>
                             <tr>
                                 <td colspan="4">
-                                    (iii)   Net Wt. of Aggregate
+                                    (iii) Net Wt. of Aggregate
                                 </td>
                                 <td>(g)</td>
                                 <td id="result"></td>
@@ -191,7 +192,7 @@
                             </tr>
                             <tr>
                                 <td colspan="4">
-                                    (iv)   Unit Wt. of Aggregate
+                                    (iv) Unit Wt. of Aggregate
                                 </td>
                                 <td>(g/cc)</td>
                                 <td id="result"></td>
@@ -206,12 +207,12 @@
                             </tr>
                             <tr>
                                 <td colspan="8" class="font-bold">
-                                    B-  RODDED WETGHT DETERMTNATTON
+                                    B- RODDED WETGHT DETERMTNATTON
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="4" >
-                                    (i)     Wt. of measure filled with aggregate
+                                <td colspan="4">
+                                    (i) Wt. of measure filled with aggregate
                                 </td>
                                 <td>(g)</td>
                                 <td><input type="text" name="H15" id=""></td>
@@ -219,8 +220,8 @@
                                 <td><input type="text" name="L15" id=""></td>
                             </tr>
                             <tr>
-                                <td colspan="4" >
-                                    (ii)    Wt. of measure
+                                <td colspan="4">
+                                    (ii) Wt. of measure
                                 </td>
                                 <td>(g)</td>
                                 <td><input type="text" name="H16" id=""></td>
@@ -228,8 +229,8 @@
                                 <td><input type="text" name="L16" id=""></td>
                             </tr>
                             <tr>
-                                <td colspan="4" >
-                                    (iii)   Net Wt. of Aggregate
+                                <td colspan="4">
+                                    (iii) Net Wt. of Aggregate
                                 </td>
                                 <td>(g)</td>
                                 <td id="result"></td>
@@ -237,8 +238,8 @@
                                 <td id="result"></td>
                             </tr>
                             <tr>
-                                <td colspan="4" >
-                                    (iv)   Unit Wt. of Aggregate
+                                <td colspan="4">
+                                    (iv) Unit Wt. of Aggregate
                                 </td>
                                 <td>(g/cc)</td>
                                 <td id="result"></td>
@@ -253,12 +254,12 @@
                             </tr>
                             <tr>
                                 <td colspan="8" class="font-bold">
-                                    C-  VOLUME OF MEASURE
+                                    C- VOLUME OF MEASURE
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="4" >
-                                    (i)     Temperature of Water
+                                <td colspan="4">
+                                    (i) Temperature of Water
                                 </td>
                                 <td>(OC)</td>
                                 <td><input type="text" name="H21" id=""></td>
@@ -266,8 +267,8 @@
                                 <td><input type="text" name="L21" id=""></td>
                             </tr>
                             <tr>
-                                <td colspan="4" >
-                                    (ii)    Wt. of Measure + Water
+                                <td colspan="4">
+                                    (ii) Wt. of Measure + Water
                                 </td>
                                 <td>(g)</td>
                                 <td><input type="text" name="H22" id=""></td>
@@ -275,8 +276,8 @@
                                 <td><input type="text" name="L22" id=""></td>
                             </tr>
                             <tr>
-                                <td colspan="4" >
-                                    (iii)   Wt. of Measure
+                                <td colspan="4">
+                                    (iii) Wt. of Measure
                                 </td>
                                 <td>(g)</td>
                                 <td><input type="text" name="H23" id=""></td>
@@ -284,8 +285,8 @@
                                 <td><input type="text" name="L23" id=""></td>
                             </tr>
                             <tr>
-                                <td colspan="4" >
-                                    (iv)   Net Wt. of Water to fill Measure
+                                <td colspan="4">
+                                    (iv) Net Wt. of Water to fill Measure
                                 </td>
                                 <td>(g)</td>
                                 <td><input type="text" name="H24" id=""></td>
@@ -293,8 +294,8 @@
                                 <td><input type="text" name="L24" id=""></td>
                             </tr>
                             <tr>
-                                <td colspan="4" >
-                                    (v)    Volume of Measure
+                                <td colspan="4">
+                                    (v) Volume of Measure
                                 </td>
                                 <td>(cc)</td>
                                 <td><input type="text" name="H25" id=""></td>
@@ -302,7 +303,7 @@
                                 <td><input type="text" name="L25" id=""></td>
                             </tr>
                             <tr>
-                                <td colspan="5" >
+                                <td colspan="5">
                                     Average
                                 </td>
                                 <td colspan="3" id="result">

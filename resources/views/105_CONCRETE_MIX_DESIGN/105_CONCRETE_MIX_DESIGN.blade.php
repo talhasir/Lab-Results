@@ -125,7 +125,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_82_Brick_Testing', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'VIEW_105_CONCRETE_MIX_DESIGN', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">
@@ -153,11 +153,11 @@
                                 class="p-2 rounded-sm" />
                             <input required name='A6' type="text" placeholder="Cement Specific Gravity:"
                                 class="p-2 rounded-sm" />
-                            <input required name='A6' type="text" placeholder="Admixture:"
+                            <input required name='A6' type="text" placeholder="Admixture Specific Gravity:"
                                 class="p-2 rounded-sm" />
-                            <input required name='A6' type="text" placeholder="Admixture:"
+                            <input required name='A6' type="text" placeholder="Water Cement Ratio"
                                 class="p-2 rounded-sm" />
-                            <input required name='I6' type="text" placeholder="Discription"
+                            <input required name='I6' type="text" placeholder="Water Specific Gravity:"
                                 class="p-2 rounded-sm flex-2" />
                         </div>
                     </div>
@@ -166,202 +166,265 @@
                     <table>
                         <thead>
                             <tr>
-                                <th class="text-center">Sieve Passing (mm)</th>
-                                <th>Size Retained
-                                    (mm)</th>
-                                <th>Grading Original Sample Retained (%)</th>
-                                <th>Weight Test Fraction Before Test (g)</th>
-                                <th>
-                                    Weight Test Fraction After Test (g)</th>
-                                <th>Loss Weight After Test (g)</th>
-                                <th>
-                                    Loss After Test (g)</th>
-                                <th>
-                                    Weighted Average (%)</th>
+                                <th rowspan="2">Description</th>
+                                <th colspan="3">Coarse Aggregate (NMSA)</th>
+                                <th>Fine Aggregate</th>
+                                <th colspan="5">Design's Constraints</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>19mm</th>
+                                <th>10mm</th>
+                                <th>Blend</th>
+                                <th>Sand</th>
+                                <th>Cementations Material</th>
+                                <th colspan="2">Cement</th>
+                                <th>Total</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>0.15</td>
-                                <td>--</td>
-                                <td><input type="text" name="DB" id=""></td>
-                                <td><input type="text" name="G8" id=""></td>
-                                <td><input type="text" name="I8" id=""></td>
-                                <td><input type="text" name="J8" id=""></td>
-                                <td><input type="text" name="L8" id=""></td>
-                                <td><input type="text" name="N8" id=""></td>
-                            </tr>
-                            <tr>
-                                <td>1.15</td>
-                                <td>0.15</td>
-                                <td><input type="text" name="D9" id=""></td>
-                                <td><input type="text" name="G9" id=""></td>
-                                <td><input type="text" name="I9" id=""></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td>0.6</td>
-                                <td>0.3</td>
-                                <td><input type="text" name="D10" id=""></td>
-                                <td><input type="text" name="G10" id=""></td>
-                                <td><input type="text" name="I10" id=""></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td>1.18</td>
-                                <td>0.6</td>
-                                <td><input type="text" name="D11" id=""></td>
-                                <td><input type="text" name="G11" id=""></td>
-                                <td><input type="text" name="I11" id=""></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td>2.36</td>
-                                <td>1.18</td>
-                                <td><input type="text" name="D12" id=""></td>
-                                <td><input type="text" name="G12" id=""></td>
-                                <td><input type="text" name="I12" id=""></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td>4.75</td>
-                                <td>2.36</td>
-                                <td><input type="text" name="D13" id=""></td>
-                                <td><input type="text" name="G13" id=""></td>
-                                <td><input type="text" name="I13" id=""></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td>9.5</td>
-                                <td>4.75</td>
-                                <td><input type="text" name="D14" id=""></td>
-                                <td><input type="text" name="G14" id=""></td>
-                                <td><input type="text" name="I14" id=""></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td class="font-bold">Total</td>
                                 <td></td>
+                                <td><input type="number" name="C11" id=""></td>
+                                <td><input type="number" name="D11" id=""></td>
+                                <td><input type="number" name="F11" id=""></td>
+                                <td><input type="number" name="H11" id=""></td>
+                                <td><input type="number" name="I11" id=""></td>
+                                <td>Blending %</td>
+                                <td colspan="2"><input type="number" name="L11" id=""></td>
+                                <td><input type="number" name="N11" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Blending %</td>
+                                <td><input type="number" name="C12" id=""></td>
+                                <td><input type="number" name="D12" id=""></td>
+                                <td><input type="number" name="F12" id=""></td>
+                                <td><input type="number" name="H12" id=""></td>
+                                <td><input type="number" name="I12" id=""></td>
+                                <td>Water</td>
+                                <td colspan="3"><input type="number" name="L12" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Sp. Gr. (S.S.D)</td>
+                                <td><input type="number" name="C13" id=""></td>
+                                <td><input type="number" name="D13" id=""></td>
+                                <td><input type="number" name="F13" id=""></td>
+                                <td><input type="number" name="H13" id=""></td>
+                                <td><input type="number" name="I13" id=""></td>
+                                <td>NMSA</td>
+                                <td colspan="3"><input type="number" name="L13" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Absorption %</td>
+                                <td><input type="number" name="C14" id=""></td>
+                                <td><input type="number" name="D14" id=""></td>
+                                <td><input type="number" name="F14" id=""></td>
+                                <td><input type="number" name="H14" id=""></td>
+                                <td><input type="number" name="I14" id=""></td>
+                                <td>Admixture%</td>
+                                <td colspan="3"><input type="number" name="L14" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Moisture Content %</td>
+                                <td><input type="number" name="C15" id=""></td>
+                                <td><input type="number" name="D15" id=""></td>
+                                <td><input type="number" name="F15" id=""></td>
+                                <td><input type="number" name="H15" id=""></td>
+                                <td><input type="number" name="I15" id=""></td>
+                                <td>Slump</td>
+                                <td colspan="3"><input type="number" name="L15" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Unit Weight of Aggregate (Kg/m3)</td>
+                                <td><input type="number" name="C15" id=""></td>
+                                <td><input type="number" name="D15" id=""></td>
+                                <td><input type="number" name="F15" id=""></td>
+                                <td id="result"></td>
+                                <td><input type="number" name="I15" id=""></td>
+                                <td>Strength "PSI"</td>
+                                <td><input type="number" name="L15" id=""></td>
+                                <td>Target</td>
+                                <td id="result"></td>
+                            </tr>
+                            <tr>
+                                <td>Finess Modulus</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input type="number" name="I17" id=""></td>
+                                <td>Entrapped Air</td>
+                                <td colspan="3"><input type="number" name="I17" id=""></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Cement</td>
+                                <td colspan="3" id="result"></td>
+                                <td>Tot. vol. of C. Agg.</td>
+                                <td><input type="number" name="K18" id=""></td>
+                                <td colspan="3" id="result">Tot. vol. of C. Agg.</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">Fly Ash</td>
+                                <td colspan="3"><input type="number" name="E19" id=""></td>
+                                <td>Tot. vol. of F. Agg.</td>
+                                <td><input type="number" name="K19" id=""></td>
+                                <td colspan="3" id="result">Tot. vol. of C. Agg.</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">Water </td>
+                                <td colspan="3" id="result"></td>
+                                <td rowspan="2" colspan="3"><input type="number" name="I20"
+                                        id="" placeholder="Volume of Fine Aggregate"></td>
+                                <td rowspan="2" colspan="2" id="result"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Admixture </td>
+                                <td colspan="3" id="result"></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">Entrapped Air </td>
+                                <td colspan="3" id="result"></td>
+                                <td rowspan="2" colspan="3"><input type="number" name="I20"
+                                        id="" placeholder="Volume of Coarse Agg.- 19 mm"></td>
+                                <td rowspan="2" colspan="2" id="result"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Total Paste </td>
+                                <td colspan="3" id="result"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Total Volume of Aggregates </td>
+                                <td colspan="3" id="result"></td>
+                                <td rowspan="2" colspan="3"><input type="number" name="I20"
+                                        id="" placeholder="Volume of Coarse Agg.- 10 mm"></td>
+                                <td rowspan="2" colspan="2" id="result"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Unit Weight of Blended Agg. (Kg/m3)</td>
+                                <td colspan="3" id="result"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    {{-- ###### Table end ######## --}}
+
+                    {{-- ###### Table start ######## --}}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2"> Original weights per m3</th>
+                                <th> Corrected Weights per m3</th>
+                                <th> Trial wts. (m3)</th>
+                                <th>0.125</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-[20%]">Cement (Kg)</td>
+                                <td id="result"></td>
+                                <td id="result"></td>
                                 <td colspan="2" id="result"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td id="result"></td>
                             </tr>
                             <tr>
-                                <td>9.5mm9.5mm</td>
-                                <td>4.75mm4.75mm</td>
-                                <td><input type="text" name="D16" id=""></td>
-                                <td><input type="text" name="G16" id=""></td>
-                                <td><input type="text" name="I16" id=""></td>
+                                <td>Water (Kg)</td>
                                 <td id="result"></td>
                                 <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td>19</td>
-                                <td>9.5</td>
-                                <td><input type="text" name="D17" id=""></td>
-                                <td><input type="text" name="G17" id=""></td>
-                                <td><input type="text" name="I17" id=""></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td>38</td>
-                                <td>19</td>
-                                <td><input type="text" name="D18" id=""></td>
-                                <td><input type="text" name="G18" id=""></td>
-                                <td><input type="text" name="I18" id=""></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td>63</td>
-                                <td>38</td>
-                                <td><input type="text" name="D19" id=""></td>
-                                <td><input type="text" name="G19" id=""></td>
-                                <td><input type="text" name="I19" id=""></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                                <td id="result"></td>
-                            </tr>
-                            <tr>
-                                <td class="font-bold">Total</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td colspan="2" id="result"></td>
                             </tr>
                             <tr>
-                                <td class="font-bold">Total Fine + Coarse:</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Admixture (Kg)</td>
+                                <td id="result"></td>
+                                <td id="result"></td>
+                                <td colspan="2" id="result"></td>
+                            </tr>
+                            <tr>
+                                <td>Fine Aggregate (Kg)</td>
+                                <td id="result"></td>
+                                <td id="result"></td>
+                                <td colspan="2" id="result"></td>
+                            </tr>
+                            <tr>
+                                <td>Coarse Aggregate 1 (Kg)</td>
+                                <td id="result"></td>
+                                <td id="result"></td>
+                                <td colspan="2" id="result"></td>
+                            </tr>
+                            <tr>
+                                <td>Coarse Aggregate 2 (Kg)</td>
+                                <td id="result"></td>
+                                <td id="result"></td>
+                                <td colspan="2" id="result"></td>
+                            </tr>
+                            <tr>
+                                <td>Combined Coarse Aggregate (Kg)</td>
+                                <td id="result"></td>
+                                <td id="result"></td>
+                                <td colspan="2" id="result"></td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td id="result"></td>
+                                <td id="result"></td>
                                 <td colspan="2" id="result"></td>
                             </tr>
                         </tbody>
                     </table>
                     {{-- ###### Table end ######## --}}
 
-                    <div>
-                        <div class="grid grid-cols-1 w-full">
-                            <span class="text-center p-2">NOTE: Weight for test individual size -</span>
-                        </div>
-                        <div class="grid grid-cols-4 w-full">
-                            <span>
-                                <ul style="list-style: none">
-                                    <li>63 mm --- 50 mm</li>
-                                    <li>50 mm --- 38 mm</li>
-                                    <li>38 mm --- 25 mm</li>
-                                    <li>25mm --- 19.0mm</li>
-                                </ul>
-                            </span>
-                            <span>
-                                <ul style="list-style: none">
-                                    <li>2825 gm</li>
-                                    <li>1958 gm</li>
-                                    <li>1012 gm</li>
-                                    <li>513 gm</li>
-                                </ul>
-                            </span>
-                            <span>
-                                <ul style="list-style: none">
-                                    <li>19.0 mm –- 12.5 mm</li>
-                                    <li>12.5 mm --- 9.5 mm</li>
-                                    <li>9.5 mm --- 4.75 mm</li>
-                                </ul>
-                            </span>
-                            <span>
-                                <ul style="list-style: none">
-                                    <li>675 gm</li>
-                                    <li>33 gm</li>
-                                    <li>298 gm</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 w-full my-5">
-                        <textarea name="A14" id="" cols="30" rows="10" placeholder="Remarks" class="p-2"></textarea>
-                    </div>
+                    {{-- ###### Table start ######## --}}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2" colspan="4">Trial Observation</th>
+                                <th>Temp.°C</th>
+                                <th>Initial Slump (mm)</th>
+                                <th>Slump after 30 mints (mm)</th>
+                            </tr>
+                            <tr>
+                                <th><input type="number" name="K36" id=""></th>
+                                <th><input type="number" name="L36" id=""></th>
+                                <th><input type="number" name="N36" id=""></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Crushing Date</td>
+                                <td colspan="2"><input type="number" name="E37" id=""></td>
+                                <td colspan="3"><input type="number" name="k37" id=""></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Age (Days)</td>
+                                <td colspan="2">7 DAYS</td>
+                                <td colspan="3">28 DAYS</td>
+                            </tr>
+                            <tr>
+                                <td>Load (KN)</td>
+                                <td><input type="number" name="E36" id=""></td>
+                                <td><input type="number" name="H36" id=""></td>
+                                <td><input type="number" name="J36" id=""></td>
+                                <td><input type="number" name="K36" id=""></td>
+                                <td><input type="number" name="L36" id=""></td>
+                                <td><input type="number" name="N36" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Comp. strength (PSI)</td>
+                                <td><input type="number" name="E37" id=""></td>
+                                <td><input type="number" name="H37" id=""></td>
+                                <td><input type="number" name="J37" id=""></td>
+                                <td><input type="number" name="K37" id=""></td>
+                                <td><input type="number" name="L37" id=""></td>
+                                <td><input type="number" name="N37" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Avg. comp. strength (PSI)</td>
+                                <td id="result" colspan="3"></td>
+                                <td id="result" colspan="3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <div class="grid grid-cols-6 gap-2 w-full">
                         <input required name='A15' type="text" placeholder="Sampled by"
                             class="p-3 rounded-sm" />
