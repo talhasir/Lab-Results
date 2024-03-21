@@ -60,6 +60,14 @@
     table #result {
         border: 1px solid gray;
         background: rgb(222, 221, 221);
+        font-weight: bold;
+    }
+
+    table input,
+    table,
+    span,
+    td {
+        text-align: center;
     }
 
     @media only screen and (max-width: 600px) {
@@ -130,34 +138,34 @@
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">
                         <div class="grid grid-cols-4 gap-2 mb-2 w-full">
-                            <input required name='A5' type="text" placeholder="Contract No."
+                            <input name='A5' required type="text" placeholder="Contract No."
                                 class="p-2 rounded-sm" />
-                            <input required name='D5' type="text" placeholder="Contract No. :"
+                            <input name='D5' required type="text" placeholder="Contract No. :"
                                 class="p-2 rounded-sm" />
-                            <input required name='I5' type="text" placeholder="Location"
+                            <input name='I5' required type="text" placeholder="Location"
                                 class="p-2 rounded-sm" />
-                            <input required name='Q5' type="text" placeholder="Lab No:"
+                            <input name='Q5' required type="text" placeholder="Lab No:"
                                 class="p-2 rounded-sm" />
                         </div>
                         <div class="grid grid-cols-4 gap-2 mb-2 w-full">
-                            <input required name='A5' type="text" placeholder="Cement:"
+                            <input name='A5' required type="text" placeholder="Cement:"
                                 class="p-2 rounded-sm" />
-                            <input required name='D5' type="text" placeholder="Cement Brand:"
+                            <input name='D5' required type="text" placeholder="Cement Brand:"
                                 class="p-2 rounded-sm" />
-                            <input required name='I5' type="text" placeholder="Concrete Class:"
+                            <input name='I5' required type="text" placeholder="Concrete Class:"
                                 class="p-2 rounded-sm" />
-                            <input required name='Q5' type="date" placeholder="Date:" class="p-2 rounded-sm" />
+                            <input name='Q5' required type="date" placeholder="Date:" class="p-2 rounded-sm" />
                         </div>
                         <div class="grid grid-cols-5 gap-2 mb-2 w-full">
-                            <input required name='A6' type="text" placeholder="Admixture:"
+                            <input name='A6' required type="text" placeholder="Admixture:"
                                 class="p-2 rounded-sm" />
-                            <input required name='A6' type="text" placeholder="Cement Specific Gravity:"
+                            <input name='H7' required type="number" placeholder="Cement Specific Gravity:"
                                 class="p-2 rounded-sm" />
-                            <input required name='A6' type="text" placeholder="Admixture Specific Gravity:"
+                            <input name='M7' required type="number" placeholder="Admixture Specific Gravity:"
                                 class="p-2 rounded-sm" />
-                            <input required name='A6' type="text" placeholder="Water Cement Ratio"
+                            <input name='D8' required type="number" placeholder="Water Cement Ratio"
                                 class="p-2 rounded-sm" />
-                            <input required name='I6' type="text" placeholder="Water Specific Gravity:"
+                            <input name='I6' required type="text" placeholder="Water Specific Gravity:"
                                 class="p-2 rounded-sm flex-2" />
                         </div>
                     </div>
@@ -185,64 +193,69 @@
                         <tbody>
                             <tr>
                                 <td></td>
-                                <td><input type="number" name="C11" id=""></td>
-                                <td><input type="number" name="D11" id=""></td>
-                                <td><input type="number" name="F11" id=""></td>
-                                <td><input type="number" name="H11" id=""></td>
-                                <td><input type="number" name="I11" id=""></td>
+                                <td><input required type="number" name="C11" id=""></td>
+                                <td><input required type="number" name="D11" id=""></td>
+                                <td><input required type="number" name="F11" id=""></td>
+                                <td><input required type="number" name="H11" id=""></td>
+                                <td><input required type="number" name="I11" id=""></td>
                                 <td>Blending %</td>
-                                <td colspan="2"><input type="number" name="L11" id=""></td>
-                                <td><input type="number" name="N11" id=""></td>
+                                <td colspan="2"><input required type="number" name="L11" id="">
+                                </td>
+                                <td><input required type="number" name="N11" id=""></td>
                             </tr>
                             <tr>
                                 <td>Blending %</td>
-                                <td><input type="number" name="C12" id=""></td>
-                                <td><input type="number" name="D12" id=""></td>
-                                <td><input type="number" name="F12" id=""></td>
-                                <td><input type="number" name="H12" id=""></td>
-                                <td><input type="number" name="I12" id=""></td>
+                                <td><input required type="number" name="C12" id=""></td>
+                                <td><input required type="number" name="D12" id=""></td>
+                                <td><input required type="number" name="F12" id=""></td>
+                                <td><input required type="number" name="H12" id=""></td>
+                                <td><input required type="number" name="I12" id=""></td>
                                 <td>Water</td>
-                                <td colspan="3"><input type="number" name="L12" id=""></td>
+                                <td colspan="3"><input required type="number" name="L12" id="">
+                                </td>
                             </tr>
                             <tr>
                                 <td>Sp. Gr. (S.S.D)</td>
-                                <td><input type="number" name="C13" id=""></td>
-                                <td><input type="number" name="D13" id=""></td>
-                                <td><input type="number" name="F13" id=""></td>
-                                <td><input type="number" name="H13" id=""></td>
-                                <td><input type="number" name="I13" id=""></td>
+                                <td><input required type="number" name="C13" id=""></td>
+                                <td><input required type="number" name="D13" id=""></td>
+                                <td><input required type="number" name="F13" id=""></td>
+                                <td><input required type="number" name="H13" id=""></td>
+                                <td><input required type="number" name="I13" id=""></td>
                                 <td>NMSA</td>
-                                <td colspan="3"><input type="number" name="L13" id=""></td>
+                                <td colspan="3"><input required type="number" name="L13" id="">
+                                </td>
                             </tr>
                             <tr>
                                 <td>Absorption %</td>
-                                <td><input type="number" name="C14" id=""></td>
-                                <td><input type="number" name="D14" id=""></td>
-                                <td><input type="number" name="F14" id=""></td>
-                                <td><input type="number" name="H14" id=""></td>
-                                <td><input type="number" name="I14" id=""></td>
+                                <td><input required type="number" name="C14" id=""></td>
+                                <td><input required type="number" name="D14" id=""></td>
+                                <td><input required type="number" name="F14" id=""></td>
+                                <td><input required type="number" name="H14" id=""></td>
+                                <td><input required type="number" name="I14" id=""></td>
                                 <td>Admixture%</td>
-                                <td colspan="3"><input type="number" name="L14" id=""></td>
+                                <td colspan="3"><input required type="number" name="L14" id="">
+                                </td>
                             </tr>
                             <tr>
                                 <td>Moisture Content %</td>
-                                <td><input type="number" name="C15" id=""></td>
-                                <td><input type="number" name="D15" id=""></td>
-                                <td><input type="number" name="F15" id=""></td>
-                                <td><input type="number" name="H15" id=""></td>
-                                <td><input type="number" name="I15" id=""></td>
+                                <td><input required type="number" name="C15" id=""></td>
+                                <td><input required type="number" name="D15" id=""></td>
+                                <td><input required type="number" name="F15" id=""></td>
+                                <td><input required type="number" name="H15" id=""></td>
+                                <td><input required type="number" name="I15" id=""></td>
                                 <td>Slump</td>
-                                <td colspan="3"><input type="number" name="L15" id=""></td>
+                                <td colspan="3"><input required type="number" name="L15" id="">
+                                </td>
                             </tr>
                             <tr>
                                 <td>Unit Weight of Aggregate (Kg/m3)</td>
-                                <td><input type="number" name="C15" id=""></td>
-                                <td><input type="number" name="D15" id=""></td>
-                                <td><input type="number" name="F15" id=""></td>
+                                <td><input required type="number" name="C16" id=""></td>
+                                <td><input required type="number" name="D16" id=""></td>
+                                <td><input required type="number" name="F16" id=""></td>
                                 <td id="result"></td>
-                                <td><input type="number" name="I15" id=""></td>
+                                <td><input required type="number" name="I16" id=""></td>
                                 <td>Strength "PSI"</td>
-                                <td><input type="number" name="L15" id=""></td>
+                                <td><input required type="number" name="L16" id=""></td>
                                 <td>Target</td>
                                 <td id="result"></td>
                             </tr>
@@ -252,30 +265,32 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input type="number" name="I17" id=""></td>
+                                <td><input required type="number" name="I17" id=""></td>
                                 <td>Entrapped Air</td>
-                                <td colspan="3"><input type="number" name="I17" id=""></td>
+                                <td colspan="3"><input required type="number" name="L17" id="">
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="2">Cement</td>
                                 <td colspan="3" id="result"></td>
                                 <td>Tot. vol. of C. Agg.</td>
-                                <td><input type="number" name="K18" id=""></td>
-                                <td colspan="3" id="result">Tot. vol. of C. Agg.</td>
+                                <td><input required type="number" name="K18" id=""></td>
+                                <td colspan="3" id="result"></td>
                             </tr>
 
                             <tr>
                                 <td colspan="2">Fly Ash</td>
-                                <td colspan="3"><input type="number" name="E19" id=""></td>
+                                <td colspan="3"><input required type="number" name="E19" id="">
+                                </td>
                                 <td>Tot. vol. of F. Agg.</td>
-                                <td><input type="number" name="K19" id=""></td>
-                                <td colspan="3" id="result">Tot. vol. of C. Agg.</td>
+                                <td><input required type="number" name="K19" id=""></td>
+                                <td colspan="3" id="result"></td>
                             </tr>
 
                             <tr>
                                 <td colspan="2">Water </td>
                                 <td colspan="3" id="result"></td>
-                                <td rowspan="2" colspan="3"><input type="number" name="I20"
+                                <td rowspan="2" colspan="3"><input required type="number" name="I20"
                                         id="" placeholder="Volume of Fine Aggregate"></td>
                                 <td rowspan="2" colspan="2" id="result"></td>
                             </tr>
@@ -287,7 +302,7 @@
                             <tr>
                                 <td colspan="2">Entrapped Air </td>
                                 <td colspan="3" id="result"></td>
-                                <td rowspan="2" colspan="3"><input type="number" name="I20"
+                                <td rowspan="2" colspan="3"><input required type="number" name="I20"
                                         id="" placeholder="Volume of Coarse Agg.- 19 mm"></td>
                                 <td rowspan="2" colspan="2" id="result"></td>
                             </tr>
@@ -298,7 +313,7 @@
                             <tr>
                                 <td colspan="2">Total Volume of Aggregates </td>
                                 <td colspan="3" id="result"></td>
-                                <td rowspan="2" colspan="3"><input type="number" name="I20"
+                                <td rowspan="2" colspan="3"><input required type="number" name="I20"
                                         id="" placeholder="Volume of Coarse Agg.- 10 mm"></td>
                                 <td rowspan="2" colspan="2" id="result"></td>
                             </tr>
@@ -318,7 +333,8 @@
                                 <th colspan="2"> Original weights per m3</th>
                                 <th> Corrected Weights per m3</th>
                                 <th> Trial wts. (m3)</th>
-                                <th>0.125</th>
+                                <th><input required type="number" value="0.125" name="N26" id="">
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -384,16 +400,18 @@
                                 <th>Slump after 30 mints (mm)</th>
                             </tr>
                             <tr>
-                                <th><input type="number" name="K36" id=""></th>
-                                <th><input type="number" name="L36" id=""></th>
-                                <th><input type="number" name="N36" id=""></th>
+                                <th><input required type="number" name="K36" id=""></th>
+                                <th><input required type="number" name="L36" id=""></th>
+                                <th><input required type="number" name="N36" id=""></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td colspan="2">Crushing Date</td>
-                                <td colspan="2"><input type="number" name="E37" id=""></td>
-                                <td colspan="3"><input type="number" name="k37" id=""></td>
+                                <td colspan="2"><input required type="number" name="E37" id="">
+                                </td>
+                                <td colspan="3"><input required type="number" name="k37" id="">
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="2">Age (Days)</td>
@@ -402,21 +420,21 @@
                             </tr>
                             <tr>
                                 <td>Load (KN)</td>
-                                <td><input type="number" name="E36" id=""></td>
-                                <td><input type="number" name="H36" id=""></td>
-                                <td><input type="number" name="J36" id=""></td>
-                                <td><input type="number" name="K36" id=""></td>
-                                <td><input type="number" name="L36" id=""></td>
-                                <td><input type="number" name="N36" id=""></td>
+                                <td><input required type="number" name="E9" id=""></td>
+                                <td><input required type="number" name="H39" id=""></td>
+                                <td><input required type="number" name="J39" id=""></td>
+                                <td><input required type="number" name="K39" id=""></td>
+                                <td><input required type="number" name="L39" id=""></td>
+                                <td><input required type="number" name="N39" id=""></td>
                             </tr>
                             <tr>
                                 <td>Comp. strength (PSI)</td>
-                                <td><input type="number" name="E37" id=""></td>
-                                <td><input type="number" name="H37" id=""></td>
-                                <td><input type="number" name="J37" id=""></td>
-                                <td><input type="number" name="K37" id=""></td>
-                                <td><input type="number" name="L37" id=""></td>
-                                <td><input type="number" name="N37" id=""></td>
+                                <td><input required type="number" name="E40" id=""></td>
+                                <td><input required type="number" name="H40" id=""></td>
+                                <td><input required type="number" name="J40" id=""></td>
+                                <td><input required type="number" name="K40" id=""></td>
+                                <td><input required type="number" name="L40" id=""></td>
+                                <td><input required type="number" name="N40" id=""></td>
                             </tr>
                             <tr>
                                 <td>Avg. comp. strength (PSI)</td>
@@ -426,18 +444,18 @@
                         </tbody>
                     </table>
                     <div class="grid grid-cols-6 gap-2 w-full">
-                        <input required name='A15' type="text" placeholder="Sampled by"
+                        <input name='A15' required type="text" placeholder="Sampled by"
                             class="p-3 rounded-sm" />
-                        <input required name='E15' type="date" placeholder="Date" class="p-3 rounded-sm" />
-                        <input required name='F15' type="text" placeholder="Tested by"
+                        <input name='E15' required type="date" placeholder="Date" class="p-3 rounded-sm" />
+                        <input name='F15' required type="text" placeholder="Tested by"
                             class="p-3 rounded-sm" />
-                        <input required name='K15' type="date" placeholder="Date" class="p-3 rounded-sm" />
-                        <input required name='L15' type="text" placeholder="Checked by"
+                        <input name='K15' required type="date" placeholder="Date" class="p-3 rounded-sm" />
+                        <input name='L15' required type="text" placeholder="Checked by"
                             class="p-3 rounded-sm" />
-                        <input required name='Q15' type="date" placeholder="Date" class="p-3 rounded-sm" />
+                        <input name='Q15' required type="date" placeholder="Date" class="p-3 rounded-sm" />
                     </div>
                 </div>
-                <button type="submit">Submit</button>
+                <button required type="submit">Submit</button>
                 {{ Form::close() }}
             </body>
         </div>
