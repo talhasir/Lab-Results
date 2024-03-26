@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\PENETRATION_OF_BITUMINOUS_MATERIAL_MODEL;
 
-class PENETRATION_OF_BITUMINOUS_MATERIAL extends Controller
+class PenetrationOfBituminousMaterial
+ extends Controller
 {
     public function getPage()
     {

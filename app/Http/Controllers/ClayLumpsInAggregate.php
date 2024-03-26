@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\CLAY_LUMPS_IN_AGGREGATE_MODEL;
 use Illuminate\Http\Request;
 
-class CLAY_LUMPS_IN_AGGREGATE extends Controller
+class ClayLumpsInAggregate extends Controller
 {
     public function getPage()
     {

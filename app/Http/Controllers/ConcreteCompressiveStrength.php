@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\CONCRETE_COMPRESSIVE_STRENGTH as ModelsCONCRETE_COMPRESSIVE_STRENGTH;
 use Illuminate\Http\Request;
 
-class CONCRETE_COMPRESSIVE_STRENGTH extends Controller
+class ConcreteCompressiveStrength extends Controller
 {
     public function getPage()
     {

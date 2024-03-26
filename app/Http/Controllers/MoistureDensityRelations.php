@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\MOISTURE_DENSITY_RELATIONS_MODEL;
 use Illuminate\Http\Request;
 
-class MOISTURE_DENSITY_RELATIONS extends Controller
+class MoistureDensityRelations extends Controller
 {
     public function getPage()
     {

@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class BLENDING_OF_AGGREGATES extends Model
+class MoistureDensityRelationsModel
+ extends Model
 {
     use HasFactory;
     protected $fillable = [
         'data',
     ];
 
-    protected $table = 'blending_of_aggregates';
+    protected $table = 'moisture_content_astm_d1557';
     protected $primary_key = 'id';
 }

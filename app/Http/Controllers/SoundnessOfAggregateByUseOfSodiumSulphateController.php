@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Soundness_of_aggregate_by_use_of_sodium_sulphate;
 
-class SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE_Controller extends Controller
+class SoundnessOfAggregateByUseOfSodiumSulphateController
+ extends Controller
 {
     public function getPage()
     {

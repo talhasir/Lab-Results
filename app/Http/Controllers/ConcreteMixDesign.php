@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\CONCRETE_MIX_DESIGN as ModelsCONCRETE_MIX_DESIGN;
 use Illuminate\Http\Request;
 
-class CONCRETE_MIX_DESIGN extends Controller
+class ConcreteMixDesign extends Controller
 {
     public function getPage()
     {

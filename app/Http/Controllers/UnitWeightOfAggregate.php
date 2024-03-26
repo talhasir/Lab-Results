@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\UNIT_WEIGHT_OF_AGGREGATE_MODEL;
 
-class UNIT_WEIGHT_OF_AGGREGATE extends Controller
+class UnitWeightOfAggregate
+ extends Controller
 {
     public function getPage()
     {
