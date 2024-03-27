@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\BLENDING_OF_AGGREGATES as ModelsBLENDING_OF_AGGREGATES;
+use App\Models\BlendingOfAggregates as ModelsBlendingOfAggregates;
 use Illuminate\Http\Request;
 use App\Models\Soundness_of_aggregate_by_use_of_sodium_sulphate;
 
-class BLENDING_OF_AGGREGATES extends Controller
+class BlendingOfAggregates extends Controller
 {
     public function getPage()
     {
@@ -17,11 +18,11 @@ class BLENDING_OF_AGGREGATES extends Controller
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = ModelsBLENDING_OF_AGGREGATES::create([
+        $dataStoring = ModelsBlendingOfAggregates::create([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = ModelsBLENDING_OF_AGGREGATES::where('id', $dataStoring->id)->first();
+        $dataRetrieving = ModelsBlendingOfAggregates::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
         ##################################

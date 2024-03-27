@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\CONCRETE_MIX_DESIGN as ModelsCONCRETE_MIX_DESIGN;
+use App\Models\ConcreteMixDesign as ModelsConcreteMixDesign;
 use Illuminate\Http\Request;
 
-class CONCRETE_MIX_DESIGN extends Controller
+class ConcreteMixDesign extends Controller
 {
     public function getPage()
     {
@@ -16,11 +17,11 @@ class CONCRETE_MIX_DESIGN extends Controller
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = ModelsCONCRETE_MIX_DESIGN::create([
+        $dataStoring = ModelsConcreteMixDesign::create([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = ModelsCONCRETE_MIX_DESIGN::where('id', $dataStoring->id)->first();
+        $dataRetrieving = ModelsConcreteMixDesign::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
         // RESULTS Unit Weight of Aggregate (Kg/m3)  //

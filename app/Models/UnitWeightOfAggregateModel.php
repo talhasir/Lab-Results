@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class MOISTURE_DENSITY_RELATIONS_MODEL extends Model
+class UnitWeightOfAggregateModel
+ extends Model
 {
     use HasFactory;
     protected $fillable = [
         'data',
     ];
 
-    protected $table = 'moisture_content_astm_d1557';
+    protected $table = 'unit_weight_of_aggregate';
     protected $primary_key = 'id';
 }

@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CONCRETE_COMPRESSIVE_STRENGTH extends Model
+class SoundnessOfAggregateByUseOfSodiumSulphate
+ extends Model
 {
     use HasFactory;
     protected $fillable = [
         'data',
     ];
 
-    protected $table = 'concrete_compresive_strength';
+    protected $table = 'soundness_of_aggregate_by_use_of_sodium_sulphate';
     protected $primary_key = 'id';
 }

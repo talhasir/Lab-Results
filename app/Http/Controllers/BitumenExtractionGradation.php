@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\BITUMEN_EXTRACTION_GRADATION as ModelsBITUMEN_EXTRACTION_GRADATION;
+use App\Models\BitumenExtractionGradation as BitumenExtractionGradationModel;
 use Illuminate\Http\Request;
-use App\Models\Soundness_of_aggregate_by_use_of_sodium_sulphate;
 
-class BITUMEN_EXTRACTION_GRADATION extends Controller
+class BitumenExtractionGradation extends Controller
 {
     public function getPage()
     {
@@ -17,11 +16,11 @@ class BITUMEN_EXTRACTION_GRADATION extends Controller
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = ModelsBITUMEN_EXTRACTION_GRADATION::create([
+        $dataStoring = BitumenExtractionGradationModel::create([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = ModelsBITUMEN_EXTRACTION_GRADATION::where('id', $dataStoring->id)->first();
+        $dataRetrieving = BitumenExtractionGradationModel::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
         ###########################################
