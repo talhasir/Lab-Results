@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CONCRETE_COMPRESSIVE_STRENGTH as ModelsCONCRETE_COMPRESSIVE_STRENGTH;
+use App\Models\ConcreteCompressiveStrength as ModelsConcreteCompressiveStrength;
 use Illuminate\Http\Request;
 
 class ConcreteCompressiveStrength extends Controller
@@ -16,11 +16,11 @@ class ConcreteCompressiveStrength extends Controller
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = ModelsCONCRETE_COMPRESSIVE_STRENGTH::create([
+        $dataStoring = ModelsConcreteCompressiveStrength::create([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = ModelsCONCRETE_COMPRESSIVE_STRENGTH::where('id', $dataStoring->id)->first();
+        $dataRetrieving = ModelsConcreteCompressiveStrength::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
         return view('85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO/VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO')->with(

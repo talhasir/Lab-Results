@@ -1,20 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BITUMEN_EXTRACTION_GRADATION;
-use App\Http\Controllers\BLENDING_OF_AGGREGATES;
+use App\Http\Controllers\BitumenExtractionGradation;
+use App\Http\Controllers\BlendingOfAggregates;
 use App\Http\Controllers\ConcreteCompressController;
 use App\Http\Controllers\BrickTestingController;
 use App\Http\Controllers\CaliforniaController;
 use App\Http\Controllers\WorkSheetController;
 use App\Http\Controllers\FieldDensityController;
-use App\Http\Controllers\CLAY_LUMPS_IN_AGGREGATE;
-use App\Http\Controllers\CONCRETE_COMPRESSIVE_STRENGTH;
+use App\Http\Controllers\ClayLumpsInAggregate;
 use App\Http\Controllers\CONCRETE_MIX_DESIGN;
-use App\Http\Controllers\MOISTURE_DENSITY_RELATIONS;
-use App\Http\Controllers\SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE_Controller;
-use App\Http\Controllers\UNIT_WEIGHT_OF_AGGREGATE;
-use App\Http\Controllers\PENETRATION_OF_BITUMINOUS_MATERIAL;
+use App\Http\Controllers\ConcreteCompressiveStrength;
+use App\Http\Controllers\ConcreteMixDesign;
+use App\Http\Controllers\PenetrationOfBituminousMaterial;
+use App\Http\Controllers\SoundnessOfAggregateByUseOfSodiumSulphateController;
+use App\Http\Controllers\UnitWeightOfAggregate;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,8 +66,8 @@ Route::post('/post_42_field_density', [FieldDensityController::class, 'postPage'
 | Routes For 51-SOUNDNESS OF AGGREGATE BY USE OF SODIUM SULPHATE
 |--------------------------------------------------------------------------
 */
-Route::get('/51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE', [SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE_Controller::class, 'getPage']);;
-Route::post('/VIEW_51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE', [SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE_Controller::class, 'postPage'])->name('VIEW_51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE');
+Route::get('/51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE', [SoundnessOfAggregateByUseOfSodiumSulphateController::class, 'getPage']);;
+Route::post('/VIEW_51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE', [SoundnessOfAggregateByUseOfSodiumSulphateController::class, 'postPage'])->name('VIEW_51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE');
 
 
 /*
@@ -75,16 +75,16 @@ Route::post('/VIEW_51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE', [SOUNDN
 | Routes For 54_UNIT_WEIGHT_OF_AGGREGATE
 |--------------------------------------------------------------------------
 */
-Route::get('/54_UNIT_WEIGHT_OF_AGGREGATE', [UNIT_WEIGHT_OF_AGGREGATE::class, 'getPage']);
-Route::post('/VIEW_54_UNIT_WEIGHT_OF_AGGREGATE', [UNIT_WEIGHT_OF_AGGREGATE::class, 'postPage'])->name('VIEW_54_UNIT_WEIGHT_OF_AGGREGATE');
+Route::get('/54_UNIT_WEIGHT_OF_AGGREGATE', [UnitWeightOfAggregate::class, 'getPage']);
+Route::post('/VIEW_54_UNIT_WEIGHT_OF_AGGREGATE', [UnitWeightOfAggregate::class, 'postPage'])->name('VIEW_54_UNIT_WEIGHT_OF_AGGREGATE');
 
 /*
 |--------------------------------------------------------------------------
 | Routes For 55-CLAY LUMPS IN AGGREGATE
 |--------------------------------------------------------------------------
 */
-Route::get('/55-CLAY LUMPS IN AGGREGATE', [CLAY_LUMPS_IN_AGGREGATE::class, 'getPage']);;
-Route::post('/VIEW 55-CLAY LUMPS IN AGGREGATE', [CLAY_LUMPS_IN_AGGREGATE::class, 'postPage'])->name('VIEW 55-CLAY LUMPS IN AGGREGATE');
+Route::get('/55-CLAY LUMPS IN AGGREGATE', [ClayLumpsInAggregate::class, 'getPage']);;
+Route::post('/VIEW 55-CLAY LUMPS IN AGGREGATE', [ClayLumpsInAggregate::class, 'postPage'])->name('VIEW 55-CLAY LUMPS IN AGGREGATE');
 
 
 /*
@@ -92,8 +92,8 @@ Route::post('/VIEW 55-CLAY LUMPS IN AGGREGATE', [CLAY_LUMPS_IN_AGGREGATE::class,
 | Routes For 69_PENETRATION_OF_BITUMINOUS_MATERIAL
 |--------------------------------------------------------------------------
 */
-Route::get('/69_PENETRATION_OF_BITUMINOUS_MATERIAL', [PENETRATION_OF_BITUMINOUS_MATERIAL::class, 'getPage']);;
-Route::post('/VIEW_69_PENETRATION_OF_BITUMINOUS_MATERIAL', [PENETRATION_OF_BITUMINOUS_MATERIAL::class, 'postPage'])->name('VIEW_69_PENETRATION_OF_BITUMINOUS_MATERIAL');
+Route::get('/69_PENETRATION_OF_BITUMINOUS_MATERIAL', [PenetrationOfBituminousMaterial::class, 'getPage']);;
+Route::post('/VIEW_69_PENETRATION_OF_BITUMINOUS_MATERIAL', [PenetrationOfBituminousMaterial::class, 'postPage'])->name('VIEW_69_PENETRATION_OF_BITUMINOUS_MATERIAL');
 
 
 /*
@@ -101,8 +101,8 @@ Route::post('/VIEW_69_PENETRATION_OF_BITUMINOUS_MATERIAL', [PENETRATION_OF_BITUM
 | Routes For 73_BITUMEN_EXTRACTION_GRADATION
 |--------------------------------------------------------------------------
 */
-Route::get('/73_BITUMEN_EXTRACTION_GRADATION', [BITUMEN_EXTRACTION_GRADATION::class, 'getPage']);;
-Route::post('/VIEW_73_BITUMEN_EXTRACTION_GRADATION', [BITUMEN_EXTRACTION_GRADATION::class, 'postPage'])->name('VIEW_73_BITUMEN_EXTRACTION_GRADATION');
+Route::get('/73_BITUMEN_EXTRACTION_GRADATION', [BitumenExtractionGradation::class, 'getPage']);;
+Route::post('/VIEW_73_BITUMEN_EXTRACTION_GRADATION', [BitumenExtractionGradation::class, 'postPage'])->name('VIEW_73_BITUMEN_EXTRACTION_GRADATION');
 
 
 /*
@@ -110,8 +110,8 @@ Route::post('/VIEW_73_BITUMEN_EXTRACTION_GRADATION', [BITUMEN_EXTRACTION_GRADATI
 | Routes For 81_BLENDING_OF_AGGREGATES
 |--------------------------------------------------------------------------
 */
-Route::get('/81_BLENDING_OF_AGGREGATES', [BLENDING_OF_AGGREGATES::class, 'getPage']);;
-Route::post('/VIEW_81_BLENDING_OF_AGGREGATES', [BLENDING_OF_AGGREGATES::class, 'postPage'])->name('VIEW_81_BLENDING_OF_AGGREGATES');
+Route::get('/81_BLENDING_OF_AGGREGATES', [BlendingOfAggregates::class, 'getPage']);;
+Route::post('/VIEW_81_BLENDING_OF_AGGREGATES', [BlendingOfAggregates::class, 'postPage'])->name('VIEW_81_BLENDING_OF_AGGREGATES');
 
 
 /*
@@ -119,8 +119,8 @@ Route::post('/VIEW_81_BLENDING_OF_AGGREGATES', [BLENDING_OF_AGGREGATES::class, '
 | Routes For 81_BLENDING_OF_AGGREGATES
 |--------------------------------------------------------------------------
 */
-Route::get('/85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO', [CONCRETE_COMPRESSIVE_STRENGTH::class, 'getPage']);;
-Route::post('/VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO', [CONCRETE_COMPRESSIVE_STRENGTH::class, 'postPage'])->name('VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO');
+Route::get('/85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO', [ConcreteCompressiveStrength::class, 'getPage']);;
+Route::post('/VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO', [ConcreteCompressiveStrength::class, 'postPage'])->name('VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO');
 
 
 /*
@@ -128,7 +128,7 @@ Route::post('/VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO', [CONCRETE_C
 | Routes For 105_CONCRETE_MIX_DESIGN
 |--------------------------------------------------------------------------
 */
-Route::get('/105_CONCRETE_MIX_DESIGN', [CONCRETE_MIX_DESIGN::class, 'getPage']);;
-Route::post('/VIEW_105_CONCRETE_MIX_DESIGN', [CONCRETE_MIX_DESIGN::class, 'postPage'])->name('VIEW_105_CONCRETE_MIX_DESIGN');
+Route::get('/105_CONCRETE_MIX_DESIGN', [ConcreteMixDesign::class, 'getPage']);;
+Route::post('/VIEW_105_CONCRETE_MIX_DESIGN', [ConcreteMixDesign::class, 'postPage'])->name('VIEW_105_CONCRETE_MIX_DESIGN');
 
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\MOISTURE_DENSITY_RELATIONS_MODEL;
+use App\Models\MoistureDensityRelationsModel;
 use Illuminate\Http\Request;
 
 class MoistureDensityRelations extends Controller
@@ -16,11 +17,11 @@ class MoistureDensityRelations extends Controller
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = MOISTURE_DENSITY_RELATIONS_MODEL::create([
+        $dataStoring = MoistureDensityRelationsModel::create([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = MOISTURE_DENSITY_RELATIONS_MODEL::where('id', $dataStoring->id)->first();
+        $dataRetrieving = MoistureDensityRelationsModel::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
         ############################################

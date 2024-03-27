@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Soundness_of_aggregate_by_use_of_sodium_sulphate;
+use App\Models\SoundnessOfAggregateByUseOfSodiumSulphate;
 
 class SoundnessOfAggregateByUseOfSodiumSulphateController
  extends Controller
@@ -17,11 +17,11 @@ class SoundnessOfAggregateByUseOfSodiumSulphateController
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = Soundness_of_aggregate_by_use_of_sodium_sulphate::create([
+        $dataStoring = SoundnessOfAggregateByUseOfSodiumSulphate::create([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = Soundness_of_aggregate_by_use_of_sodium_sulphate::where('id', $dataStoring->id)->first();
+        $dataRetrieving = SoundnessOfAggregateByUseOfSodiumSulphate::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
         //RESULTS Loss Weight After Test (g)(D)  //

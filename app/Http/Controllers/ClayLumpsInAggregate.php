@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CLAY_LUMPS_IN_AGGREGATE_MODEL;
+use App\Models\ClayLumpsInAggregateModel;
 use Illuminate\Http\Request;
 
 class ClayLumpsInAggregate extends Controller
@@ -16,11 +16,11 @@ class ClayLumpsInAggregate extends Controller
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = CLAY_LUMPS_IN_AGGREGATE_MODEL::create([
+        $dataStoring = ClayLumpsInAggregateModel::create([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = CLAY_LUMPS_IN_AGGREGATE_MODEL::where('id', $dataStoring->id)->first();
+        $dataRetrieving = ClayLumpsInAggregateModel::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
         ############################################

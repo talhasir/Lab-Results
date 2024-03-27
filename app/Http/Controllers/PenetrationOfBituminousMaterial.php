@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\PENETRATION_OF_BITUMINOUS_MATERIAL_MODEL;
+use App\Models\PenetrationOfBituminousMaterialModel;
 
 class PenetrationOfBituminousMaterial
  extends Controller
@@ -17,11 +17,11 @@ class PenetrationOfBituminousMaterial
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = PENETRATION_OF_BITUMINOUS_MATERIAL_MODEL::create([
+        $dataStoring = PenetrationOfBituminousMaterialModel::createp([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = PENETRATION_OF_BITUMINOUS_MATERIAL_MODEL::where('id', $dataStoring->id)->first();
+        $dataRetrieving = PenetrationOfBituminousMaterialModel::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
 

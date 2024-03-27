@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\UNIT_WEIGHT_OF_AGGREGATE_MODEL;
+use App\Models\UnitWeightOfAggregateModel;
 
 class UnitWeightOfAggregate
  extends Controller
@@ -17,11 +17,11 @@ class UnitWeightOfAggregate
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = UNIT_WEIGHT_OF_AGGREGATE_MODEL::create([
+        $dataStoring = UnitWeightOfAggregateModel::create([
             'data' => $requestData,
         ]);
 
-        $dataRetrieving = UNIT_WEIGHT_OF_AGGREGATE_MODEL::where('id', $dataStoring->id)->first();
+        $dataRetrieving = UnitWeightOfAggregateModel::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
         // A-  LOOSE WETGHT DETERMTNATTON //
