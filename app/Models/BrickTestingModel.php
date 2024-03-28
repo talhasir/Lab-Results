@@ -13,6 +13,6 @@ class BrickTestingModel extends Model
         'data',
     ];
 
-    protected $table = 'bricktesting';
+    protected $table = 'brick_testing';
     protected $primary_key = 'id';
 }

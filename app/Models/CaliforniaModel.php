@@ -13,6 +13,6 @@ class CaliforniaModel extends Model
         'data',
     ];
 
-    protected $table = 'california';
+    protected $table = 'clifornia';
     protected $primary_key = 'id';
 }

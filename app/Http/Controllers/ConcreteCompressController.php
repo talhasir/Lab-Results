@@ -9,7 +9,7 @@ class ConcreteCompressController extends Controller
 {
     public function getPage()
     {
-        return view('CONCRETE_COMPRESS/84_CONCRETE_COMPRES');
+        return view('lab/postviews/post_84_concrete_compres');
     }
     
     public function postPage(Request $request)
@@ -29,6 +29,6 @@ class ConcreteCompressController extends Controller
     $S12 = $data->Q12/182.4*14.223;
     $S13 = $data->Q13/182.4*14.223;
     
-    return view('CONCRETE_COMPRESS/VIEW_84_CONCRETE_COMPRES')->with(compact('S11','S12', 'S13', 'data' ));
+    return view('lab/getviews/get_84_concrete_compres')->with(compact('S11','S12', 'S13', 'data' ));
     }
 }

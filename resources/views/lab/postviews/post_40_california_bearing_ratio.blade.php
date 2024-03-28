@@ -44,29 +44,27 @@
                     <h2 class="text-[1.5rem] font-bold text-center">CALIFORNIA BEARING RATIO (AASHTO T-193)</h2>
                 </div>
                 <div class="flex flex-col">
-                    <input required name="" type="text" placeholder="Doc#">
-                    <input required name="" type="text" placeholder="Rev">
-                    <input required name="" type="date" placeholder="Date">
-                    <input required name="" type="text" placeholder="Page">
+                    <input name="" type="text" placeholder="Doc#">
+                    <input name="" type="text" placeholder="Rev">
+                    <input name="" type="date" placeholder="Date">
+                    <input name="" type="text" placeholder="Page">
                 </div>
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_view_40_CALIFORNIA_BEARING_RATIO', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'post_view_40_california_bearing_ratio', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div class="w-full my-3">
                     <div class="grid grid-cols-3 gap-2 mb-2 w-full">
-                        <input required name="" type="text" placeholder="Contract No."
-                            class="p-2 rounded-sm" />
-                        <input required name="" type="text" placeholder="Contractor" class="p-2 rounded-sm" />
-                        <input required name="" type="text" placeholder="Location" class="p-2 rounded-sm" />
+                        <input name="" type="text" placeholder="Contract No." class="p-2 rounded-sm" />
+                        <input name="" type="text" placeholder="Contractor" class="p-2 rounded-sm" />
+                        <input name="" type="text" placeholder="Location" class="p-2 rounded-sm" />
                     </div>
                     <div class="grid grid-cols-5 gap-2 mb-2 w-full">
-                        <input required name="" type="text" placeholder="Lab No." class="p-2 rounded-sm" />
-                        <input required name="" type="text" placeholder="Description:"
-                            class="p-2 rounded-sm" />
-                        <input required name="" type="text" placeholder="Source:" class="p-2 rounded-sm" />
-                        <input required name="" type="text" placeholder="Change:" class="p-2 rounded-sm" />
-                        <input required name="" type="text" placeholder="Sample No." class="p-2 rounded-sm" />
+                        <input name="" type="text" placeholder="Lab No." class="p-2 rounded-sm" />
+                        <input name="" type="text" placeholder="Description:" class="p-2 rounded-sm" />
+                        <input name="" type="text" placeholder="Source:" class="p-2 rounded-sm" />
+                        <input name="" type="text" placeholder="Change:" class="p-2 rounded-sm" />
+                        <input name="" type="text" placeholder="Sample No." class="p-2 rounded-sm" />
                     </div>
                 </div>
                 <div class="mt-5 table">
@@ -84,35 +82,27 @@
                             <!-- // body // -->
                             <div class="grid grid-cols-4" id="body">
                                 <span class="p-3">Can No.</span>
-                                <input required name="C9" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="C9" type="text" class="p-3 rounded-sm" />
                                 <span class="p-3">No. of Blows</span>
-                                <input required name="I9" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="I9" type="text" class="p-3 rounded-sm" />
                             </div>
                             <div class="grid grid-cols-4" id="body">
                                 <span class="p-3">Can + Wet Soil (gm)</span>
-                                <input required name="C10" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="C10" type="text" class="p-3 rounded-sm" />
                                 <span class="p-3  ">No. of Blows</span>
-                                <input required name="I10" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="I10" type="text" class="p-3 rounded-sm" />
                             </div>
                             <div class="grid grid-cols-4" id="body">
                                 <span class="p-3">Can + Dry Soil (gm)</span>
-                                <input required name="C11" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="C11" type="text" class="p-3 rounded-sm" />
                                 <span class="p-3  ">Mold + Wet Soil</span>
-                                <input required name="I11" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="I11" type="text" class="p-3 rounded-sm" />
                             </div>
                             <div class="grid grid-cols-4" id="body">
                                 <span class="p-3">Wt. of Can (gm)</span>
-                                <input required name="C12" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="C12" type="text" class="p-3 rounded-sm" />
                                 <span class="p-3  ">Wt. Mold</span>
-                                <input required name="I12" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="I12" type="text" class="p-3 rounded-sm" />
                             </div>
                             <div class="grid grid-cols-4" id="body">
                                 <span class="p-3">Wt. of Water (gm)</span>
@@ -124,23 +114,19 @@
                             </div>
                             <div class="grid grid-cols-4" id="body">
                                 <span class="p-3">Wt. of Dry Soil (gm)</span>
-                                <input required name="C14" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="C14" type="text" class="p-3 rounded-sm" />
                                 <span class="p-3  ">Mold Volume (gm)</span>
-                                <input required name="I14" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="I14" type="text" class="p-3 rounded-sm" />
                             </div>
                             <div class="grid grid-cols-4" id="body">
                                 <span class="p-3">Moisture Content % </span>
-                                <input required name="C15" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="C15" type="text" class="p-3 rounded-sm" />
                                 <span class="p-3  ">Wet Density (gm)</span>
                                 <span class="p-2 font-bold"></span>
                             </div>
                             <div class="grid grid-cols-4" id="body">
                                 <span class="p-3">Average %</span>
-                                <input required name="C16" type="text" 
-                                    class="p-3 rounded-sm" />
+                                <input name="C16" type="text" class="p-3 rounded-sm" />
                                 <span class="p-3  ">Dry Density (gm)</span>
                                 <span class="p-2 font-bold"></span>
                             </div>
@@ -148,9 +134,9 @@
 
                         <div>
                             <div class="grid grid-cols-2">
-                                <input required name="C17" type="text" placeholder="Ring Factor:"
+                                <input name="C17" type="text" placeholder="Ring Factor:"
                                     class="p-3 rounded-sm" />
-                                <input required name="I17" type="text" placeholder="Area of Plunger (cm2):"
+                                <input name="I17" type="text" placeholder="Area of Plunger (cm2):"
                                     class="p-3 rounded-sm" />
                             </div>
                             <div class="grid grid-rows">
@@ -173,24 +159,19 @@
                             <!-- // Table body // -->
                             <div class="grid grid-cols-6" id="body">
                                 <span class="p-3">Can No.</span>
-                                <input required name="C19" type="text" placeholder=""
-                                    class="p-3 rounded-sm" />
+                                <input name="C19" type="text" placeholder="" class="p-3 rounded-sm" />
                                 <span class="p-3">Wt. of Container (gm)</span>
-                                <input required name="I19" type="text" placeholder=""
-                                    class="p-3 rounded-sm" />
+                                <input name="I19" type="text" placeholder="" class="p-3 rounded-sm" />
                                 <span class="p-3">Can + Wet Soil (gm)</span>
-                                <input required name="C20" type="text"
-                                    class="p-3 rounded-sm" />
+                                <input name="C20" type="text" class="p-3 rounded-sm" />
                             </div>
                             <div class="grid grid-cols-6" id="body">
                                 <span class="p-3  ">Wt. of Dry Soil (gm)</span>
                                 <span class="p-2 font-bold"></span>
                                 <span class="p-3">Can + Dry Soil (gm)</span>
-                                <input required name="C21" type="text"
-                                    class="p-3 rounded-sm" />
+                                <input name="C21" type="text" class="p-3 rounded-sm" />
                                 <span class="p-3  ">Moisture Content %</span>
-                                <input required name="I21" type="text"
-                                    class="p-3 rounded-sm" />
+                                <input name="I21" type="text" class="p-3 rounded-sm" />
                             </div>
                             <div class="grid grid-cols-6" id="body">
                                 <span class="p-3">Wt. Water (gm)</span>
@@ -211,53 +192,31 @@
                             <!-- // Table body // -->
                             <div class="grid grid-cols-12" id="body">
                                 <span class="py-1 px-3">Penetration (mm)</span>
-                                <input required name="K19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="M19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="N19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="P19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="Q19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="S19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="U19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="W19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="Y19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="AA19" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
+                                <input name="K19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="M19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="N19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="P19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="Q19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="S19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="U19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="W19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="Y19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="AA19" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
                             </div>
                             <div class="grid grid-cols-12" id="body">
                                 <span class="py-1 px-3">Dial Reading</span>
-                                <input required name="K20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="M20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="N20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="P20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="Q20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="S20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="U20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="W20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="Y20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="AA20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="AB20" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
+                                <input name="K20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="M20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="N20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="P20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="Q20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="S20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="U20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="W20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="Y20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="AA20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="AB20" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
                             </div>
                             <div class="grid grid-cols-12" id="body">
                                 <span class="py-1 px-3">Load (kg)</span>
@@ -289,7 +248,7 @@
                             </div>
                             <div class="grid grid-cols-12" id="body">
                                 <span class="py-1 px-3">Standard Load</span>
-                                <input required name="K19" type="text" placeholder=""
+                                <input name="K19" type="text" placeholder=""
                                     class="py-1 px-3 rounded-sm col-span-11" />
                             </div>
                             <div class="grid grid-cols-12" id="body">
@@ -308,44 +267,32 @@
                             </div>
                             <div class="grid grid-cols-12" id="body">
                                 <span class="py-1 px-3">Corrected CBR(%)</span>
-                                <input required name="K25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="M25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="N25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="P25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="Q25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="S25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="U25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="W25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="Y25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="AA25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
-                                <input required name="AB25" type="text" placeholder=""
-                                    class="py-1 px-3 rounded-sm" />
+                                <input name="K25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="M25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="N25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="P25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="Q25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="S25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="U25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="W25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="Y25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="AA25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
+                                <input name="AB25" type="text" placeholder="" class="py-1 px-3 rounded-sm" />
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 w-full my-5">
-                    <textarea required name="A23" id="" cols="30" rows="10" placeholder="Remarks"
-                        class="p-2"></textarea>
+                    <textarea name="A23" id="" cols="30" rows="10" placeholder="Remarks" class="p-2"></textarea>
                 </div>
                 <div class="grid grid-cols-6 gap-2 w-full">
-                    <input required name="" type="text" placeholder="Sampled by" class="p-3 rounded-sm" />
-                    <input required name="" type="date" placeholder="Date" class="p-3 rounded-sm" />
-                    <input required name="" type="text" placeholder="Tested by" class="p-3 rounded-sm" />
-                    <input required name="" type="date" placeholder="Date" class="p-3 rounded-sm" />
-                    <input required name="" type="text" placeholder="Checked by" class="p-3 rounded-sm" />
-                    <input required name="" type="date" placeholder="Date" class="p-3 rounded-sm" />
+                    <input name="" type="text" placeholder="Sampled by" class="p-3 rounded-sm" />
+                    <input name="" type="date" placeholder="Date" class="p-3 rounded-sm" />
+                    <input name="" type="text" placeholder="Tested by" class="p-3 rounded-sm" />
+                    <input name="" type="date" placeholder="Date" class="p-3 rounded-sm" />
+                    <input name="" type="text" placeholder="Checked by" class="p-3 rounded-sm" />
+                    <input name="" type="date" placeholder="Date" class="p-3 rounded-sm" />
                 </div>
                 <button type="submit">Submit</button>
                 {{ Form::close() }}

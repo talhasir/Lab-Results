@@ -9,7 +9,7 @@ class BrickTestingController extends Controller
 {
     public function getPage()
     {
-        return view('BRICK_TESTING/82BrickTesting');
+        return view('lab/postviews/post_82bricktesting');
     }
 
     public function postPage(Request $request)
@@ -43,7 +43,7 @@ class BrickTestingController extends Controller
         // RESULTS AVERAGE
         $Q8 = ($N8 + $N9 + $N10 + $N11 + $N12) / 5;
 
-        return view('BRICK_TESTING.view_82_BRICK_TESTING')
+        return view('lab/getviews/get_82bricktesting')
         ->with(compact('data', 'G8', 'G9', 'G10', 'G11', 'G12', 'G13', 'H8', 'N8', 'N9', 'N10', 'N11', 'N12', 'Q8'));
 
     }

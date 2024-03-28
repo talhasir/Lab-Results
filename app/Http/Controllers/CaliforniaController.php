@@ -9,7 +9,7 @@ class CaliforniaController extends Controller
 {
     public function getPage()
     {
-        return view('CALI_FORNIA/40_CALIFORNIA_BEARING_RATIO');
+        return view('lab/postviews/post_40_california_bearing_ratio');
     }
 
     public function postPage(Request $request)
@@ -63,7 +63,7 @@ class CaliforniaController extends Controller
         # STANDRAD LOAD #
         $StandardLoad = "(0.1' 70.3) (0.2' 105.5)";
 
-        return view('CALI_FORNIA/view_40_CALIFORNIA_BEARING_RATIO')
+        return view('lab/getviews/get_40_california_bearing_ratio')
         ->with(compact(
             'data', 'C13', 'C14', 'I13', 'I15', 'I16', 'I20', 'C22',
             // 'M21', 'N21', 'P21', 'Q21', 'S21', 'U21', 'W21', 'AA21', 'AB21',

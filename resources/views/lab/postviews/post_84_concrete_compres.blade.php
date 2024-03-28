@@ -73,7 +73,7 @@
                         <input required type="text" placeholder="Road" class="p-2 rounded-sm flex-2" />
                     </div>
                 </div>
-                {{ Form::open(['route' => 'post_84_CONCRETE_COMPRESS', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'post_84_concrete_compress', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div class="grid grid-cols-1 mb-2 w-full">
                     <span class="p-3 bg-blue-100">Curing Laboratory / Fields</span>
                 </div>
