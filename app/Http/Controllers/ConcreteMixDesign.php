@@ -10,7 +10,7 @@ class ConcreteMixDesign extends Controller
 {
     public function getPage()
     {
-        return view('105_CONCRETE_MIX_DESIGN/105_CONCRETE_MIX_DESIGN');
+        return view('post_105_concrete_mix_design');
     }
 
     public function postPage(Request $request)

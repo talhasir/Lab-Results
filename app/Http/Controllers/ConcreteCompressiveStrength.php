@@ -9,7 +9,7 @@ class ConcreteCompressiveStrength extends Controller
 {
     public function getPage()
     {
-        return view('85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO/85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO');
+        return view('/get_85_concrete_compressive_strength_28_days_ezypro');
     }
 
     public function postPage(Request $request)

@@ -9,7 +9,7 @@ class FieldDensityController extends Controller
 {
     public function getPage()
     {
-        return view('FIELD DENSITY/42_FIELD_DENSITY_TEST');
+        return view('lab/postviews/post_42_field_density_test');
     }
 
     public function postPage(Request $request)
@@ -84,7 +84,7 @@ class FieldDensityController extends Controller
         $M40 = $M37 < $M38 ? 'FAIL' : 'PASS';
         $finalResults = compact('G40', 'I40', 'K40', 'M40', );
 
-        return view('FIELD DENSITY/view_42_FIELD_DENSITY_TEST')->with(
+        return view('lab/getviews/get_42_field_density_test')->with(
             compact(
                 'data',
                 'ResultsForUsedSand',

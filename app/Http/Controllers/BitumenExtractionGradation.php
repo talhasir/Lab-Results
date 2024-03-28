@@ -9,7 +9,7 @@ class BitumenExtractionGradation extends Controller
 {
     public function getPage()
     {
-        return view('73_BITUMEN_EXTRACTION_GRADATION/73_BITUMEN_EXTRACTION_GRADATION');
+        return view('post_42_field_density_test');
     }
 
     public function postPage(Request $request)

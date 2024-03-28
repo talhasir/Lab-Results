@@ -13,7 +13,7 @@ class ConcreteCompressModel extends Model
         'data',
     ];
     
-    protected $table = 'concretecompress';
+    protected $table = 'concrete_compress';
     protected $primary_key = 'id';
 
     

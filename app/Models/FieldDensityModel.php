@@ -13,6 +13,6 @@ class FieldDensityModel extends Model
         'data',
     ];
 
-    protected $table = 'fielddensity';
+    protected $table = 'field_density';
     protected $primary_key = 'id';
 }
