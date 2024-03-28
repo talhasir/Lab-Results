@@ -128,36 +128,35 @@
                     <h1 class="text-[1.5rem] font-bold text-center">CONTRETE COMPRESSIVE STRENGTH (ASTM C39)</h1>
                 </div>
                 <div class="flex flex-col">
-                    <input required type="text" placeholder="Doc#">
-                    <input required type="text" placeholder="Rev">
-                    <input required type="date" placeholder="Date">
-                    <input required type="text" placeholder="Page">
+                    <input disabled type="text" placeholder="Doc#">
+                    <input disabled type="text" placeholder="Rev">
+                    <input disabled type="date" placeholder="Date">
+                    <input disabled type="text" placeholder="Page">
                 </div>
             </header>
 
             <body class="flex flex-col" >
                 <div class="w-full my-5">
                     <div class="grid grid-cols-4 gap-2 mb-2 w-full">
-                        <input required type="text" placeholder="BQQ No:" class="p-2 rounded-sm" />
-                        <input required type="text" placeholder="Contractor:" class="p-2 rounded-sm" />
-                        <input required type="text" placeholder="Project:" class="p-2 rounded-sm" />
-                        <input required type="text" placeholder="Lab No:" class="p-2 rounded-sm" />
+                        <input disabled type="text" placeholder="BQQ No:" class="p-2 rounded-sm" />
+                        <input disabled type="text" placeholder="Contractor:" class="p-2 rounded-sm" />
+                        <input disabled type="text" placeholder="Project:" class="p-2 rounded-sm" />
+                        <input disabled type="text" placeholder="Lab No:" class="p-2 rounded-sm" />
                     </div>
                     <div class="grid grid-cols-1 gap-2 mb-2 w-full">
-                        <input required type="text" placeholder="Concrete Plant Location:" class="p-2 rounded-sm" />
+                        <input disabled type="text" placeholder="Concrete Plant Location:" class="p-2 rounded-sm" />
                     </div>
                     <div class="grid grid-cols-3 gap-2 mb-2 w-full">
-                        <input required type="text" placeholder="Concrete Class" class="p-2 rounded-sm" />
-                        <input required type="date" placeholder="Date Moulded" class="p-2 rounded-sm" />
-                        <input required type="text" placeholder="Check Request No" class="p-2 rounded-sm" />
+                        <input disabled type="text" placeholder="Concrete Class" class="p-2 rounded-sm" />
+                        <input disabled type="date" placeholder="Date Moulded" class="p-2 rounded-sm" />
+                        <input disabled type="text" placeholder="Check Request No" class="p-2 rounded-sm" />
                     </div>
                     <div class="grid grid-cols-3 gap-2 mb-2 w-full">
-                        <input required type="text" placeholder="Phase" class="p-2 rounded-sm" />
-                        <input required type="text" placeholder="Street" class="p-2 rounded-sm" />
-                        <input required type="text" placeholder="Road" class="p-2 rounded-sm flex-2" />
+                        <input disabled type="text" placeholder="Phase" class="p-2 rounded-sm" />
+                        <input disabled type="text" placeholder="Street" class="p-2 rounded-sm" />
+                        <input disabled type="text" placeholder="Road" class="p-2 rounded-sm flex-2" />
                     </div>
                 </div>
-                {{ Form::open(['route' => 'VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div class="grid grid-cols-1 mb-2 w-full">
                     <span class="p-3 bg-blue-100">Curing Laboratory / Fields</span>
                 </div>
@@ -200,7 +199,7 @@
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="date" {{-- placeholder="Testing Date" --}} class="p-2 w-full" id='b-11'
+                                <input disabled type="date" {{-- placeholder="Testing Date" --}} class="p-2 w-full" id='b-11'
                                      value="{{$data->B11 ?? ''}}" name='B11' />
                             </td>
 
@@ -209,7 +208,7 @@
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Dimensions (cm)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Dimensions (cm)" --}} class="p-2 w-full"
                                      value="{{$data->G11 ?? ''}}" name='G11' />
                             </td>
 
@@ -218,12 +217,12 @@
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Type of Fracture" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Type of Fracture" --}} class="p-2 w-full"
                                      value="{{$data->N11 ?? ''}}" name='N11' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Load (kg)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Load (kg)" --}} class="p-2 w-full"
                                      value="{{$data->Q11 ?? ''}}" name='Q11' />
                             </td>
 
@@ -240,7 +239,7 @@
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="date" {{-- placeholder="Testing Date" --}} class="p-2 w-full"
+                                <input disabled type="date" {{-- placeholder="Testing Date" --}} class="p-2 w-full"
                                     id='b-11'  value="{{$data->B12 ?? ''}}" name='B12' />
                             </td>
 
@@ -249,7 +248,7 @@
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Dimensions (cm)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Dimensions (cm)" --}} class="p-2 w-full"
                                      value="{{$data->G12 ?? ''}}" name='G12' />
                             </td>
 
@@ -258,12 +257,12 @@
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Type of Fracture" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Type of Fracture" --}} class="p-2 w-full"
                                      value="{{$data->N12 ?? ''}}" name='N12' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Load (kg)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Load (kg)" --}} class="p-2 w-full"
                                      value="{{$data->Q12 ?? ''}}" name='Q12' />
                             </td>
 
@@ -280,7 +279,7 @@
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="date" {{-- placeholder="Testing Date" --}} class="p-2 w-full"
+                                <input disabled type="date" {{-- placeholder="Testing Date" --}} class="p-2 w-full"
                                      value="{{$data->B13 ?? ''}}" name='B13' />
                             </td>
 
@@ -289,7 +288,7 @@
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Dimensions (cm)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Dimensions (cm)" --}} class="p-2 w-full"
                                      value="{{$data->G13 ?? ''}}" name='G13' />
                             </td>
 
@@ -298,12 +297,12 @@
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Type of Fracture" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Type of Fracture" --}} class="p-2 w-full"
                                      value="{{$data->N13 ?? ''}}" name='N13' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Load (kg)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Load (kg)" --}} class="p-2 w-full"
                                      value="{{$data->Q13 ?? ''}}" name='Q13' />
                             </td>
 
@@ -318,10 +317,10 @@
                 </table>
 
                 <div class="grid grid-cols-6 w-full my-5  ">
-                    <input required type="number" placeholder="Tested by" class="p-2 rounded-sm gap-2 bg-[#ffffcc]"
+                    <input disabled type="number" placeholder="Tested by" class="p-2 rounded-sm gap-2 bg-[#ffffcc]"
                         id="a-20"  value="{{$data->A14 ?? ''}}" name='A14' />
 
-                    <input required type="date" {{-- placeholder="Date" --}} class="p-2 rounded-sm" id="c-20"
+                    <input disabled type="date" {{-- placeholder="Date" --}} class="p-2 rounded-sm" id="c-20"
                          value="{{$data->B14 ?? ''}}" name='B14' />
 
                     <span class='p-3'>
@@ -336,7 +335,7 @@
                         Reported for 28 days:
                     </span>
 
-                    <input required type="number" {{-- placeholder="" --}}  value="{{$data->S15 ?? ''}}" name='S15'
+                    <input disabled type="number" {{-- placeholder="" --}}  value="{{$data->S15 ?? ''}}" name='S15'
                         class="p-2 rounded-sm gap-2 bg-[#ffffcc]" />
 
                 </div>
@@ -363,22 +362,22 @@
 
                         <tr>
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Cylinder No." --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Cylinder No." --}} class="p-2 w-full"
                                     id='a-17'  value="{{$data->A17 ?? ''}}" name='A17' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="SSD Mass (g)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="SSD Mass (g)" --}} class="p-2 w-full"
                                     id='i-17'  value="{{$data->E17 ?? ''}}" name='E17' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Volume (cc)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Volume (cc)" --}} class="p-2 w-full"
                                     id='l-17'  value="{{$data->J17 ?? ''}}" name='J17' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Density (g/cc)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Density (g/cc)" --}} class="p-2 w-full"
                                     id='s-17'  value="{{$data->P17 ?? ''}}" name='P17' />
                             </td>
 
@@ -386,22 +385,22 @@
 
                         <tr>
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Cylinder No." --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Cylinder No." --}} class="p-2 w-full"
                                     id='a-17'  value="{{$data->A18 ?? ''}}" name='A18' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="SSD Mass (g)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="SSD Mass (g)" --}} class="p-2 w-full"
                                     id='i-17'  value="{{$data->E18 ?? ''}}" name='E18' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Volume (cc)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Volume (cc)" --}} class="p-2 w-full"
                                     id='l-17'  value="{{$data->J18 ?? ''}}" name='J18' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Density (g/cc)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Density (g/cc)" --}} class="p-2 w-full"
                                     id='s-17'  value="{{$data->P18 ?? ''}}" name='P18' />
                             </td>
 
@@ -409,22 +408,22 @@
 
                         <tr>
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Cylinder No." --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Cylinder No." --}} class="p-2 w-full"
                                     id='a-17'  value="{{$data->A19 ?? ''}}" name='A19' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="SSD Mass (g)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="SSD Mass (g)" --}} class="p-2 w-full"
                                     id='i-17'  value="{{$data->E19 ?? ''}}" name='E19' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Volume (cc)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Volume (cc)" --}} class="p-2 w-full"
                                     id='l-17'  value="{{$data->J19 ?? ''}}" name='J19' />
                             </td>
 
                             <td class="w-[10%]">
-                                <input required type="number" {{-- placeholder="Density (g/cc)" --}} class="p-2 w-full"
+                                <input disabled type="number" {{-- placeholder="Density (g/cc)" --}} class="p-2 w-full"
                                     id='s-17'  value="{{$data->P19 ?? ''}}" name='P19' />
                             </td>
 
@@ -435,13 +434,13 @@
                 <!-- // Tested by, Date, Average Fields // -->
 
                 <div class="grid grid-cols-3 gap-2 w-full">
-                    <input required type="text" placeholder="Tested by" class="p-2 rounded-sm gap-2"
+                    <input disabled type="text" placeholder="Tested by" class="p-2 rounded-sm gap-2"
                         id="a-20"  value="{{$data->A20 ?? ''}}" name='A20' />
 
-                    <input required type="date" placeholder="Date" class="p-2 rounded-sm" id="c-20"
+                    <input disabled type="date" placeholder="Date" class="p-2 rounded-sm" id="c-20"
                          value="{{$data->B20 ?? ''}}" name='B20' />
 
-                    <input required type="text" placeholder="Average" class="p-2 rounded-sm" id="c-20"
+                    <input disabled type="text" placeholder="Average" class="p-2 rounded-sm" id="c-20"
                          value="{{$data->C20 ?? ''}}" name='C20' />
 
                 </div>
@@ -453,9 +452,9 @@
                 </div>
 
                 <div class="grid grid-cols-4 gap-2 w-full">
-                    <input required type="text" placeholder="Sampled by" class="p-3 rounded-sm"  value="{{$data->A22 ?? ''}}" name='A22' />
-                    <input required type="text" placeholder="Tested by" class="p-3 rounded-sm"  value="{{$data->B22 ?? ''}}" name='B22' />
-                    <input required type="text" placeholder="Checked by" class="p-3 rounded-sm col-span-2"
+                    <input disabled type="text" placeholder="Sampled by" class="p-3 rounded-sm"  value="{{$data->A22 ?? ''}}" name='A22' />
+                    <input disabled type="text" placeholder="Tested by" class="p-3 rounded-sm"  value="{{$data->B22 ?? ''}}" name='B22' />
+                    <input disabled type="text" placeholder="Checked by" class="p-3 rounded-sm col-span-2"
                          value="{{$data->C22 ?? ''}}" name='C22' />
                 </div>
             </body>

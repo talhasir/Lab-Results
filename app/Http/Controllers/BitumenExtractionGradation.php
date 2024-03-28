@@ -9,7 +9,7 @@ class BitumenExtractionGradation extends Controller
 {
     public function getPage()
     {
-        return view('post_42_field_density_test');
+        return view('lab/postviews/post_73_bitumen_extraction_gradation');
     }
 
     public function postPage(Request $request)
@@ -82,7 +82,7 @@ class BitumenExtractionGradation extends Controller
         $N20 = 100 - $L20;
         $RsAvgBitByWtOfAgg = compact('C20', 'L20', 'N20');
 
-        return view('73_BITUMEN_EXTRACTION_GRADATION/VIEW_73_BITUMEN_EXTRACTION_GRADATION')->with(
+        return view('lab/getviews/get_73_bitumen_extraction_gradation')->with(
             compact(
                 'data',
                 'RsOfWeightOfFilterAftTest',

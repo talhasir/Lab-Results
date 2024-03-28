@@ -11,7 +11,7 @@ class BlendingOfAggregates extends Controller
 {
     public function getPage()
     {
-        return view('81_BLENDING_OF_AGGREGATES/81_BLENDING_OF_AGGREGATES');
+    return view('lab/postviews/post_81_blending_of_aggregates');
     }
 
     public function postPage(Request $request)
@@ -143,7 +143,7 @@ class BlendingOfAggregates extends Controller
             'O19', 'Q19', 'R19', 'S19', 'T19', 'U19', 'V19', 'W19', 'X19'
         );
 
-        return view('81_BLENDING_OF_AGGREGATES/VIEW_81_BLENDING_OF_AGGREGATES')->with(
+        return view('lab/getviews/get_81_blending_of_aggregates')->with(
             compact(
                 'data',
                 'RsCombinedGradation1',

@@ -115,34 +115,34 @@
                     </h1>
                 </div>
                 <div class="flex flex-col">
-                    <input required type="text" placeholder="Doc#">
-                    <input required type="text" placeholder="Rev" />
-                    <input required type="date" placeholder="Date" />
-                    <input required type="text" placeholder="Page" />
+                    <input  type="text" placeholder="Doc#">
+                    <input  type="text" placeholder="Rev" />
+                    <input  type="date" placeholder="Date" />
+                    <input  type="text" placeholder="Page" />
                 </div>
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'VIEW_54_UNIT_WEIGHT_OF_AGGREGATE', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'view_54_unit_weight_of_aggregate', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">
                         <div class="grid grid-cols-5 gap-2 mb-2 w-full">
-                            <input required name='A5' type="text" placeholder="Contract No."
+                            <input  name='A5' type="text" placeholder="Contract No."
                                 class="p-2 rounded-sm" />
-                            <input required name='D5' type="text" placeholder="Contractor"
+                            <input  name='D5' type="text" placeholder="Contractor"
                                 class="p-2 rounded-sm" />
-                            <input required name='I5' type="text" placeholder="Location"
+                            <input  name='I5' type="text" placeholder="Location"
                                 class="p-2 rounded-sm" />
-                            <input required name='Q5' type="text" placeholder="Lab No:"
+                            <input  name='Q5' type="text" placeholder="Lab No:"
                                 class="p-2 rounded-sm" />
-                            <input required name='Q5' type="text" placeholder="Sample No"
+                            <input  name='Q5' type="text" placeholder="Sample No"
                                 class="p-2 rounded-sm" />
                         </div>
                         <div class="grid grid-cols-2 gap-2 mb-2 w-full">
-                            <input required name='A6' type="text" placeholder="Discription"
+                            <input  name='A6' type="text" placeholder="Discription"
                                 class="p-2 rounded-sm" />
-                            <input required name='I6' type="text" placeholder="Test Method"
+                            <input  name='I6' type="text" placeholder="Test Method"
                                 class="p-2 rounded-sm flex-2" />
                         </div>
                     </div>
@@ -446,15 +446,15 @@
                         <textarea name="A14" id="" cols="30" rows="10" placeholder="Remarks" class="p-2"></textarea>
                     </div>
                     <div class="grid grid-cols-6 gap-2 w-full">
-                        <input required name='A15' type="text" placeholder="Sampled by"
+                        <input  name='A15' type="text" placeholder="Sampled by"
                             class="p-3 rounded-sm" />
-                        <input required name='E15' type="date" placeholder="Date" class="p-3 rounded-sm" />
-                        <input required name='F15' type="text" placeholder="Tested by"
+                        <input  name='E15' type="date" placeholder="Date" class="p-3 rounded-sm" />
+                        <input  name='F15' type="text" placeholder="Tested by"
                             class="p-3 rounded-sm" />
-                        <input required name='K15' type="date" placeholder="Date" class="p-3 rounded-sm" />
-                        <input required name='L15' type="text" placeholder="Checked by"
+                        <input  name='K15' type="date" placeholder="Date" class="p-3 rounded-sm" />
+                        <input  name='L15' type="text" placeholder="Checked by"
                             class="p-3 rounded-sm" />
-                        <input required name='Q15' type="date" placeholder="Date" class="p-3 rounded-sm" />
+                        <input  name='Q15' type="date" placeholder="Date" class="p-3 rounded-sm" />
                     </div>
                 </div>
                 <button type="submit">Submit</button>

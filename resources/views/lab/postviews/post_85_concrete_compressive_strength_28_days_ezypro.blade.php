@@ -160,7 +160,7 @@
                         <input required type="text" placeholder="Road" class="p-2 rounded-sm flex-2" />
                     </div>
                 </div>
-                {{ Form::open(['route' => 'VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'view_85_concrete_compressive_strength_28_days_ezypro', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div class="grid grid-cols-1 mb-2 w-full">
                     <span class="p-3 bg-blue-100">Curing Laboratory / Fields</span>
                 </div>

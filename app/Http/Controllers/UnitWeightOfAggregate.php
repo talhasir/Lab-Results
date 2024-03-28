@@ -10,7 +10,7 @@ class UnitWeightOfAggregate
 {
     public function getPage()
     {
-        return view('54_UNIT_WEIGHT_OF_AGGREGATE/54_UNIT_WEIGHT_OF_AGGREGATE');
+        return view('lab/postviews/post_54_unit_weight_of_aggregate');
     }
 
     public function postPage(Request $request)
@@ -47,7 +47,7 @@ class UnitWeightOfAggregate
         // AVERAGE //
         $H19 = ($H18+$J18+$L18)/3;
 
-        return view('54_UNIT_WEIGHT_OF_AGGREGATE/VIEW_54_UNIT_WEIGHT_OF_AGGREGATE')->with(
+        return view('lab/getviews/get_54_unit_weight_of_aggregate')->with(
             compact(
                 'data', 'H11', 'J11', 'L11', 'H26', 'H12', 'J12', 'L12', 'H13', 'H17', 'J17', 'L17', 'H18', 'J18', 'L18', 'H19',
             ),

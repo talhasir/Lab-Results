@@ -32,7 +32,7 @@
 
 <body>
     <div class="flex justify-center align-center">
-        <div class="w-[70%] p-[3%]">
+        <div class="w-[90%] p-[3%]">
             <header class="grid grid-cols-4">
                 <div class=" grid grid-cols-2">
                     <div class="flex justify-center items-center">
@@ -55,8 +55,6 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_89_WORK_SHEET', 'method' => 'POST', 'class' => '', 'id' => '']) }}
-
                 <div class="w-full my-5">
                     <div class="grid grid-cols-4 gap-2 mb-2 w-full">
                         <input disabled value="" name="" type="text" placeholder="Contract No."

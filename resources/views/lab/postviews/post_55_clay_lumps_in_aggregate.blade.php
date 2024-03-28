@@ -127,7 +127,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'VIEW 55-CLAY LUMPS IN AGGREGATE', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'view_55_clay_lumps_in_aggregate', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
 
                     <div>

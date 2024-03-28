@@ -125,7 +125,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'VIEW_69_PENETRATION_OF_BITUMINOUS_MATERIAL', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'view_69_penetration_of_bituminous_material', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">

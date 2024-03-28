@@ -10,14 +10,14 @@ class PenetrationOfBituminousMaterial
 {
     public function getPage()
     {
-        return view('69_PENETRATION_OF_BITUMINOUS_MATERIAL/69_PENETRATION_OF_BITUMINOUS_MATERIAL');
+        return view('lab/postviews/post_69_penetration_of_bituminous_material');
     }
 
     public function postPage(Request $request)
     {
         $requestData = $request->all();
         $requestData = json_encode($requestData);
-        $dataStoring = PenetrationOfBituminousMaterialModel::createp([
+        $dataStoring = PenetrationOfBituminousMaterialModel::create([
             'data' => $requestData,
         ]);
 
@@ -25,7 +25,7 @@ class PenetrationOfBituminousMaterial
         $data = json_decode($dataRetrieving->data);
 
 
-        return view('69_PENETRATION_OF_BITUMINOUS_MATERIAL/VIEW_69_PENETRATION_OF_BITUMINOUS_MATERIAL')->with(
+        return view('lab/getviews/get_69_penetration_of_bituminous_material')->with(
             compact(
                 'data',
             ),

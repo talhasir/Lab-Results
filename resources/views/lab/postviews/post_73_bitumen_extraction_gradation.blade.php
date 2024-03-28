@@ -135,7 +135,7 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'VIEW_73_BITUMEN_EXTRACTION_GRADATION', 'method' => 'POST', 'class' => '', 'id' => '']) }}
+                {{ Form::open(['route' => 'view_73_bitumen_extraction_gradation', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
 
                     <div>

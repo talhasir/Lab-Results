@@ -9,7 +9,7 @@ class ConcreteCompressiveStrength extends Controller
 {
     public function getPage()
     {
-        return view('/get_85_concrete_compressive_strength_28_days_ezypro');
+        return view('lab/postviews/post_85_concrete_compressive_strength_28_days_ezypro');
     }
 
     public function postPage(Request $request)
@@ -23,7 +23,7 @@ class ConcreteCompressiveStrength extends Controller
         $dataRetrieving = ModelsConcreteCompressiveStrength::where('id', $dataStoring->id)->first();
         $data = json_decode($dataRetrieving->data);
 
-        return view('85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO/VIEW_85_CONCRETE_COMPRESSIVE_STRENGTH_28_DAYS_EZYPRO')->with(
+        return view('lab/getviews/get_85_concrete_compressive_strength_28_days_ezypro')->with(
             compact(
                 'data',
             ),

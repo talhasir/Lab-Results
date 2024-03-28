@@ -9,7 +9,7 @@ class ClayLumpsInAggregate extends Controller
 {
     public function getPage()
     {
-        return view('55_CLAY_LUMPS_IN_AGGREGATE/55_CLAY_LUMPS_IN_AGGREGATE');
+        return view('lab/postviews/post_55_clay_lumps_in_aggregate');
     }
 
     public function postPage(Request $request)
@@ -50,7 +50,7 @@ class ClayLumpsInAggregate extends Controller
         $K12 = $I12 * $data->E12 / 100;
         $ResultsOfWeightAvrg = compact('K9', 'K10', 'K11', 'K12', );
 
-        return view("55_CLAY_LUMPS_IN_AGGREGATE/VIEW_55-CLAY LUMPS IN AGGREGATE")->with(
+        return view("lab/getviews/get_55_clay_lumps_in_aggregate")->with(
             compact(
                 'data',
                 'ResultsOfActualLoosAftTestGrams',

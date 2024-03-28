@@ -136,7 +136,6 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'VIEW_81_BLENDING_OF_AGGREGATES', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">

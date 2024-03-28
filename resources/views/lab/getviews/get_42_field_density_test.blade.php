@@ -49,7 +49,6 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'post_42_field_density', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div class="w-full mt-5">
                     <div class="grid grid-cols-5 gap-2 mb-2 w-full">
                         <input required type="text" placeholder="BOQ No." class="p-2 rounded-sm" />

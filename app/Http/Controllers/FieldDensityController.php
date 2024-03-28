@@ -64,25 +64,25 @@ class FieldDensityController extends Controller
         // $ResultsForDryDensity = compact('G29', 'I29', 'K29', 'M29', );
 
         // RESULTS  Compaction Obtained  //
-        $G36 = ($G29 / $data->G33) * 100;
-        $I36 = ($I29 / $data->I33) * 100;
-        $K36 = ($K29 / $data->K33) * 100;
-        $M36 = ($M29 / $data->M33) * 100;
-        $ResultsForCompaction = compact('G36', 'I36', 'K36', 'M36', );
+        // $G36 = ($G29 / $data->G33) * 100;
+        // $I36 = ($I29 / $data->I33) * 100;
+        // $K36 = ($K29 / $data->K33) * 100;
+        // $M36 = ($M29 / $data->M33) * 100;
+        // $ResultsForCompaction = compact('G36', 'I36', 'K36', 'M36', );
 
-        // RESULTS  Compaction Reported  //
-        $G37 = $G36;
-        $I37 = $I36;
-        $K37 = ($K29 / $data->K33) * 100;
-        $M37 = $M36;
-        $ResultsForCompactionReport = compact('G37', 'I37', 'K37', 'M37', );
+        // // RESULTS  Compaction Reported  //
+        // $G37 = $G36;
+        // $I37 = $I36;
+        // $K37 = ($K29 / $data->K33) * 100;
+        // $M37 = $M36;
+        // $ResultsForCompactionReport = compact('G37', 'I37', 'K37', 'M37', );
 
-        // RESULTS Pass/Fail //
-        $G40 = $G37 < $G38 ? 'FAIL' : 'PASS';
-        $I40 = $I37 < $I38 ? 'FAIL' : 'PASS';
-        $K40 = $K37 < $K38 ? 'FAIL' : 'PASS';
-        $M40 = $M37 < $M38 ? 'FAIL' : 'PASS';
-        $finalResults = compact('G40', 'I40', 'K40', 'M40', );
+        // // RESULTS Pass/Fail //
+        // $G40 = $G37 < $G38 ? 'FAIL' : 'PASS';
+        // $I40 = $I37 < $I38 ? 'FAIL' : 'PASS';
+        // $K40 = $K37 < $K38 ? 'FAIL' : 'PASS';
+        // $M40 = $M37 < $M38 ? 'FAIL' : 'PASS';
+        // $finalResults = compact('G40', 'I40', 'K40', 'M40', );
 
         return view('lab/getviews/get_42_field_density_test')->with(
             compact(
@@ -92,9 +92,9 @@ class FieldDensityController extends Controller
                 'ResultsForVolumnOfMaterial',
                 'ResultsForWetDensity',
                 // 'ResultsForDryDensity',
-                'ResultsForCompaction',
-                'ResultsForCompactionReport',
-                'finalResults',
+                // 'ResultsForCompaction',
+                // 'ResultsForCompactionReport',
+                // 'finalResults',
             ),
         );
     }

@@ -12,6 +12,6 @@ class WorkSheetModel extends Model
         'data',
     ];
 
-    protected $table = 'worksheetforbituminous';
+    protected $table = 'work_sheet';
     protected $primary_key = 'id';
 }

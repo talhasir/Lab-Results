@@ -10,7 +10,7 @@ class SoundnessOfAggregateByUseOfSodiumSulphateController
 {
     public function getPage()
     {
-        return view('51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE/51_SOUNDNESS_OF_AGGREGATE_BY_USE _OF_SODIUM_SULPHATE');
+        return view('lab/postviews/post_51_soundness_of_aggregate_by_use_of_sodium_sulphate');
     }
 
     public function postPage(Request $request)
@@ -113,7 +113,7 @@ class SoundnessOfAggregateByUseOfSodiumSulphateController
         // // $M40 = $M37 < $M38 ? 'FAIL' : 'PASS';
         // $finalResults = compact('G40', 'I40', 'K40', 'M40', );
 
-        return view('51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE/VIEW_51_SOUNDNESS_OF_AGGREGATE_BY_USE _OF_SODIUM_SULPHATE')->with(
+        return view('lab/getviews/get_51_soundness_of_aggregate_by_use_of_sodium_sulphate')->with(
             compact(
                 'data',
                 'ResultsLoosWeightAfterTest',

@@ -125,48 +125,47 @@
                     </h1>
                 </div>
                 <div class="flex flex-col">
-                    <input required type="text" placeholder="Doc#">
-                    <input required type="text" placeholder="Rev" />
-                    <input required type="date" placeholder="Date" />
-                    <input required type="text" placeholder="Page" />
+                    <input disabled type="text" placeholder="Doc#">
+                    <input disabled type="text" placeholder="Rev" />
+                    <input disabled type="date" placeholder="Date" />
+                    <input disabled type="text" placeholder="Page" />
                 </div>
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'VIEW_105_CONCRETE_MIX_DESIGN', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">
                         <div class="grid grid-cols-4 gap-2 mb-2 w-full">
-                            <input required value="{{ $data->A5 ?? '' }}" disabled name='A5' type="text"
+                            <input disabled value="{{ $data->A5 ?? '' }}" disabled name='A5' type="text"
                                 placeholder="Contract No." class="p-2 rounded-sm" />
-                            <input required value="{{ $data->D5 ?? '' }}" disabled name='D5' type="text"
+                            <input disabled value="{{ $data->D5 ?? '' }}" disabled name='D5' type="text"
                                 placeholder="Contract No. :" class="p-2 rounded-sm" />
-                            <input required value="{{ $data->I5 ?? '' }}" disabled name='I5' type="text"
+                            <input disabled value="{{ $data->I5 ?? '' }}" disabled name='I5' type="text"
                                 placeholder="Location" class="p-2 rounded-sm" />
-                            <input required value="{{ $data->Q5 ?? '' }}" disabled name='Q5' type="text"
+                            <input disabled value="{{ $data->Q5 ?? '' }}" disabled name='Q5' type="text"
                                 placeholder="Lab No:" class="p-2 rounded-sm" />
                         </div>
                         <div class="grid grid-cols-4 gap-2 mb-2 w-full">
-                            <input required value="{{ $data->A5 ?? '' }}" disabled name='A5' type="text"
+                            <input disabled value="{{ $data->A5 ?? '' }}" disabled name='A5' type="text"
                                 placeholder="Cement:" class="p-2 rounded-sm" />
-                            <input required value="{{ $data->D5 ?? '' }}" disabled name='D5' type="text"
+                            <input disabled value="{{ $data->D5 ?? '' }}" disabled name='D5' type="text"
                                 placeholder="Cement Brand:" class="p-2 rounded-sm" />
-                            <input required value="{{ $data->I5 ?? '' }}" disabled name='I5' type="text"
+                            <input disabled value="{{ $data->I5 ?? '' }}" disabled name='I5' type="text"
                                 placeholder="Concrete Class:" class="p-2 rounded-sm" />
-                            <input required value="{{ $data->Q5 ?? '' }}" disabled name='Q5' type="date"
+                            <input disabled value="{{ $data->Q5 ?? '' }}" disabled name='Q5' type="date"
                                 placeholder="Date:" class="p-2 rounded-sm" />
                         </div>
                         <div class="grid grid-cols-5 gap-2 mb-2 w-full">
-                            <input required value="{{ $data->A6 ?? '' }}" disabled name='A6' type="text"
+                            <input disabled value="{{ $data->A6 ?? '' }}" disabled name='A6' type="text"
                                 placeholder="Admixture:" class="p-2 rounded-sm" />
-                            <input required value="{{ $data->A6 ?? '' }}" disabled name='A6' type="text"
+                            <input disabled value="{{ $data->A6 ?? '' }}" disabled name='A6' type="text"
                                 placeholder="Cement Specific Gravity:" class="p-2 rounded-sm" />
-                            <input required value="{{ $data->A6 ?? '' }}" disabled name='A6' type="text"
+                            <input disabled value="{{ $data->A6 ?? '' }}" disabled name='A6' type="text"
                                 placeholder="Admixture Specific Gravity:" class="p-2 rounded-sm" />
-                            <input required value="{{ $data->A6 ?? '' }}" disabled name='A6' type="text"
+                            <input disabled value="{{ $data->A6 ?? '' }}" disabled name='A6' type="text"
                                 placeholder="Water Cement Ratio" class="p-2 rounded-sm" />
-                            <input required value="{{ $data->I6 ?? '' }}" disabled name='I6' type="text"
+                            <input disabled value="{{ $data->I6 ?? '' }}" disabled name='I6' type="text"
                                 placeholder="Water Specific Gravity:" class="p-2 rounded-sm flex-2" />
                         </div>
                     </div>
@@ -497,17 +496,17 @@
                         </tbody>
                     </table>
                     <div class="grid grid-cols-6 gap-2 w-full">
-                        <input required value="{{ $data->A15 ?? '' }}" disabled name='A15' type="text"
+                        <input disabled value="{{ $data->A15 ?? '' }}" disabled name='A15' type="text"
                             placeholder="Sampled by" class="p-3 rounded-sm" />
-                        <input required value="{{ $data->E15 ?? '' }}" disabled name='E15' type="date"
+                        <input disabled value="{{ $data->E15 ?? '' }}" disabled name='E15' type="date"
                             placeholder="Date" class="p-3 rounded-sm" />
-                        <input required value="{{ $data->F15 ?? '' }}" disabled name='F15' type="text"
+                        <input disabled value="{{ $data->F15 ?? '' }}" disabled name='F15' type="text"
                             placeholder="Tested by" class="p-3 rounded-sm" />
-                        <input required value="{{ $data->K15 ?? '' }}" disabled name='K15' type="date"
+                        <input disabled value="{{ $data->K15 ?? '' }}" disabled name='K15' type="date"
                             placeholder="Date" class="p-3 rounded-sm" />
-                        <input required value="{{ $data->L15 ?? '' }}" disabled name='L15' type="text"
+                        <input disabled value="{{ $data->L15 ?? '' }}" disabled name='L15' type="text"
                             placeholder="Checked by" class="p-3 rounded-sm" />
-                        <input required value="{{ $data->Q15 ?? '' }}" disabled name='Q15' type="date"
+                        <input disabled value="{{ $data->Q15 ?? '' }}" disabled name='Q15' type="date"
                             placeholder="Date" class="p-3 rounded-sm" />
                     </div>
                 </div>

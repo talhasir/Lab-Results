@@ -10,7 +10,7 @@ class ConcreteMixDesign extends Controller
 {
     public function getPage()
     {
-        return view('post_105_concrete_mix_design');
+        return view('lab/postviews/post_105_concrete_mix_design');
     }
 
     public function postPage(Request $request)
@@ -113,7 +113,7 @@ class ConcreteMixDesign extends Controller
         $K41=$data->K40+$data->L40+$data->J40;
         $RsAvgComStrength = compact('E41', 'K41');
        
-        return view('105_CONCRETE_MIX_DESIGN/VIEW_105_CONCRETE_MIX_DESIGN')->with(
+        return view('lab/getviews/get_105_concrete_mix_design')->with(
             compact(
                 'data',
                 'compactVariables',

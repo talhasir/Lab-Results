@@ -129,7 +129,6 @@
             </header>
 
             <body class="flex flex-col">
-                {{ Form::open(['route' => 'VIEW_51_SOUNDNESS_OF_AGGREGATE_BY_USE_OF_SODIUM_SULPHATE', 'method' => 'POST', 'class' => '', 'id' => '']) }}
                 <div>
                     {{-- ######// Header Start//####### --}}
                     <div class="w-full my-5">

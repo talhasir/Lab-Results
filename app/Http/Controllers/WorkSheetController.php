@@ -9,7 +9,7 @@ class WorkSheetController extends Controller
 {
     public function getPage()
     {
-        return view('WORK_SHEET/89_WORKSHEET_FOR_BITUMINOUS');
+        return view('lab/postviews/post_89_worksheet_for_bituminous');
     }
 
     public function postPage(Request $request)
@@ -39,7 +39,7 @@ class WorkSheetController extends Controller
         // RESULTS Required Rate of Application //
         $F22 = "0.65~1.75";
 
-        return view('WORK SHEET/view_89_WORKSHEET_FOR_BITUMINOUS')
+        return view('lab/getviews/get_89_worksheet_for_bituminous')
         ->with(compact('data', 'F17', 'I17', 'L17', 'F20', 'I20', 'L20', 'F21', 'F22'));
 
     }
